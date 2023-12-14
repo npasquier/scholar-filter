@@ -79,65 +79,49 @@ const JournalFilter: React.FC<JournalFilterProps> = ({
   ];
 
   return (
-    <div className="relative top-0">
+    <div className="relative top-0 p-4 md:p-0">
+      {" "}
+      {/* Added padding for mobile */}
       <h3 className="font-semibold text-xl text-center my-3">Journal Filter</h3>
-      <div className="flex">
+      <div className="flex flex-col md:flex-row md:items-center max-md:gap-2">
+        {" "}
+        {/* Responsive flex container */}
         <input
           type="text"
           placeholder="Search by name..."
           value={filterText}
-          className="w-64 mr-6 px-3 py-2 placeholder-gray-500 border border-gray-300 rounded-md shadow-sm outline-none focus:outline-none focus:ring-2 focus:ring-slate-300 focus:border-transparent"
+          className="w-full md:w-64 mb-4 md:mb-0 md:mr-6 px-3 py-2 placeholder-gray-500 border border-gray-300 rounded-md shadow-sm outline-none focus:outline-none focus:ring-2 focus:ring-slate-300 focus:border-transparent" // Responsive width and margin
           onChange={(e) => setFilterText(e.target.value)}
         />
-        {/* <select
-        value={filterRank}
-        onChange={(e) => setFilterRank(e.target.value)}
-      >
-        <option value="">Filter by rank</option>
-        <option value="1">Rank: 1</option>
-        <option value="2">Rank: 2</option>
-        <option value="3">Rank: 3</option>
-        <option value="4">Rank: 4</option>
-      </select> */}
+        <div className="flex">
+          <CustomDropdown
+            setFilter={setFilterDomain}
+            filter={filterDomain}
+            items={categories}
+          />
 
-        <CustomDropdown
-          setFilter={setFilterDomain}
-          filter={filterDomain}
-          items={categories}
-        />
-
-        <CustomDropdown
-          setFilter={setFilterRank}
-          filter={filterRank}
-          items={ranks}
-        />
-
-        {/* <select
-        value={filterDomain}
-        onChange={(e) => setFilterDomain(e.target.value)}
-      >
-        <option value="">Filter by domain</option>
-        {categories.map((category) => (
-          <option key={category} value={category}>
-            {category}
-          </option>
-        ))}
-      </select> */}
+          <CustomDropdown
+            setFilter={setFilterRank}
+            filter={filterRank}
+            items={ranks}
+          />
+        </div>
       </div>
       <div className="mt-4">
         {filteredJournals.map((journal, index) => (
-          <div key={index}>
-            {/* <input
-              type="checkbox"
-              onChange={(e) => handleJournalCheck(journal, e.target.checked)}
-            /> */}
+          <div key={index} className="mb-2">
+            {" "}
+            {/* Added margin between items */}
             <button
               className="relative inline-flex items-center justify-center rounded-full bg-green-500 w-5 h-5 text-white font-bold text-lg hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-700 focus:ring-opacity-50 mr-2"
               onClick={() => onAddJournal(journal)}
             >
               +
             </button>
-            {journal.name} - {journal.domain} - Rank: {journal.category}
+            <span className="text-sm md:text-base">
+              {journal.name} - {journal.domain} - Rank: {journal.category}
+            </span>{" "}
+            {/* Responsive text size */}
           </div>
         ))}
       </div>
