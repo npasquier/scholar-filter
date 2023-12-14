@@ -53,17 +53,23 @@ const JournalManager: React.FC<JournalManagerProps> = ({ journals }) => {
 
   return (
     <div className="w-[80%]">
-      <div className="mx-auto my-12 text-center">
+      <div className="mx-auto mt-0 mb-16 text-center">
         <input
           type="text"
           value={query}
           onChange={handleQueryChange}
           placeholder="Enter search query"
+          className="w-96 mr-6 px-3 py-2 placeholder-gray-500 border border-gray-300 rounded-md shadow-sm outline-none focus:outline-none focus:ring-2 focus:ring-slate-300 focus:border-transparent"
         />
 
-        <button onClick={handleSubmit}>Search on Google Scholar</button>
+        <button
+          className="elm-bg-color text-slate-100 py-2 px-4 font-semibold rounded-lg shadow-xl hover:bg-slate-200 hover:text-slate-900 focus:outline-none focus:ring-2 focus:ring-slate-300 focus:ring-opacity-75"
+          onClick={handleSubmit}
+        >
+          Search on Google Scholar
+        </button>
       </div>
-      <div className="grid grid-cols-2 relative  gap-6">
+      <div className="grid grid-cols-2 relative gap-6 mt-6">
         <div>
           <JournalFilter journals={journals} onAddJournal={handleAddJournal} />
         </div>

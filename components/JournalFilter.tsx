@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
+import CustomDropdown from "./custom-items/CustomDropdown";
 
 interface Journal {
   name: string;
@@ -36,23 +37,59 @@ const JournalFilter: React.FC<JournalFilterProps> = ({
     setFilteredJournals(filtered);
   }, [filterText, filterRank, filterDomain, journals]);
 
-
   // Getting categories
-  const categories = useMemo(() => {
-    const allCategories = journals.map((journal) => journal.domain);
-    return Array.from(new Set(allCategories)).sort();
-  }, [journals]);
+  // const categories = useMemo(() => {
+  //   const allCategories = journals.map((journal) => journal.domain);
+  //   return Array.from(new Set(allCategories)).sort();
+  // }, [journals]);
+
+  const ranks = [
+    { name: "Rank", value: "" },
+    { name: "Rank: 1", value: "1" },
+    { name: "Rank: 2", value: "2" },
+    { name: "Rank: 3", value: "3" },
+    { name: "Rank: 4", value: "4" },
+  ];
+
+  const categories = [
+    { name: "Category", value: "" },
+    { name: "AgrEnEnv", value: "AgrEnEnv" },
+    { name: "CPT", value: "CPT" },
+    { name: "DevTrans", value: "DevTrans" },
+    { name: "EcoDroit", value: "EcoDroit" },
+    { name: "EcoPub", value: "EcoPub" },
+    { name: "Fin", value: "Fin" },
+    { name: "GEN", value: "GEN" },
+    { name: "GRH", value: "GRH" },
+    { name: "HPEA", value: "HPEA" },
+    { name: "Innov", value: "Innov" },
+    { name: "LOG", value: "LOG" },
+    { name: "MKG", value: "MKG" },
+    { name: "Macro", value: "Macro" },
+    { name: "Metrie", value: "Metrie" },
+    { name: "MgPub", value: "MgPub" },
+    { name: "OrgInd", value: "OrgInd" },
+    { name: "RO", value: "RO" },
+    { name: "SANT", value: "SANT" },
+    { name: "SI", value: "SI" },
+    { name: "Spatiale", value: "Spatiale" },
+    { name: "StratOrg", value: "StratOrg" },
+    { name: "ThEco", value: "ThEco" },
+    { name: "TravPop", value: "TravPop" },
+  ];
 
   return (
     <div className="relative top-0">
       <h3 className="font-semibold text-xl text-center my-3">Journal Filter</h3>
-      <input
-        type="text"
-        placeholder="Search by name..."
-        value={filterText}
-        onChange={(e) => setFilterText(e.target.value)}
-      />
-      <select
+      <div className="flex">
+        <input
+          type="text"
+          placeholder="Search by name..."
+          value={filterText}
+          className="w-64 mr-6 px-3 py-2 placeholder-gray-500 border border-gray-300 rounded-md shadow-sm outline-none focus:outline-none focus:ring-2 focus:ring-slate-300 focus:border-transparent"
+          onChange={(e) => setFilterText(e.target.value)}
+        />
+        {/* <select
         value={filterRank}
         onChange={(e) => setFilterRank(e.target.value)}
       >
@@ -61,8 +98,21 @@ const JournalFilter: React.FC<JournalFilterProps> = ({
         <option value="2">Rank: 2</option>
         <option value="3">Rank: 3</option>
         <option value="4">Rank: 4</option>
-      </select>
-      <select
+      </select> */}
+
+        <CustomDropdown
+          setFilter={setFilterDomain}
+          filter={filterDomain}
+          items={categories}
+        />
+
+        <CustomDropdown
+          setFilter={setFilterRank}
+          filter={filterRank}
+          items={ranks}
+        />
+
+        {/* <select
         value={filterDomain}
         onChange={(e) => setFilterDomain(e.target.value)}
       >
@@ -72,7 +122,8 @@ const JournalFilter: React.FC<JournalFilterProps> = ({
             {category}
           </option>
         ))}
-      </select>
+      </select> */}
+      </div>
       <div className="mt-4">
         {filteredJournals.map((journal, index) => (
           <div key={index}>

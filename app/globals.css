@@ -2,4 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+.bombay-color {
+  color: #aeaeaf;
+}
 
+.bombay-bg-color {
+  background-color: #afaeae08;
+}
+
+.elm-bg-color {
+  background-color: #1d7a85;
+}
+
+.cold-gray-color {
+  color: #191919;
+}
