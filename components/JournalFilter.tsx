@@ -80,7 +80,7 @@ const JournalFilter: React.FC<JournalFilterProps> = ({
 
   const categoryTranslation = [
     { name: "AgrEnEnv", value: "Agriculture, Energy and Environment" },
-    { name: "CPT", value: "CPT" },
+    { name: "CPT", value: "Accounting and Auditing" },
     { name: "DevTrans", value: "Development and Transportation" },
     { name: "EcoDroit", value: "Economic and Legal Studies" },
     { name: "EcoPub", value: "Economic and Public Policy" },
@@ -89,14 +89,14 @@ const JournalFilter: React.FC<JournalFilterProps> = ({
     { name: "GRH", value: "Human Resources Management" },
     {
       name: "HPEA",
-      value: "Healthcare, Pharmaceutical, and Environmental Analysis",
+      value: "History of Economic Thought, Economic and Business History, Methodology",
     },
     { name: "Innov", value: "Innovation" },
     { name: "LOG", value: "Logistics" },
     { name: "MKG", value: "Marketing" },
     { name: "Macro", value: "Macroeconomics" },
-    { name: "Metrie", value: "Metrology and Measurement" },
-    { name: "MgPub", value: "Management and Public Policy" },
+    { name: "Metrie", value: "Econometrics" },
+    { name: "MgPub", value: "Public Management" },
     { name: "OrgInd", value: "Industrial Organization" },
     { name: "RO", value: "Operations Research" },
     { name: "SANT", value: "Health Sciences" },
@@ -104,7 +104,7 @@ const JournalFilter: React.FC<JournalFilterProps> = ({
     { name: "Spatiale", value: "Spatial Analysis" },
     { name: "StratOrg", value: "Strategic Organization" },
     { name: "ThEco", value: "Theoretical Economics" },
-    { name: "TravPop", value: "Travel and Population Studies" },
+    { name: "TravPop", value: "Labor and Population Economics" },
   ];
 
   const categoryHTML = categoryTranslation
