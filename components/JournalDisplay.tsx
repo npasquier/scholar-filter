@@ -15,6 +15,15 @@ const JournalDisplay: React.FC<JournalDisplayProps> = ({
   selectedJournals,
   onRemoveJournal,
 }) => {
+
+  const columnStyles = {
+    name: "w-3/6 px-4 py-2", 
+    domain: "w-1/6 px-4 py-2 text-center", 
+    category: "w-1/6 px-4 py-2 text-center", 
+    remove: "w-1/6 px-4 py-2 text-center", 
+  };
+
+
   return (
     <div className="mb-6 bg-gray-100 p-4 rounded-lg">
       <p className="font-semibold text-lg text-center mb-4  ">
@@ -35,10 +44,10 @@ const JournalDisplay: React.FC<JournalDisplayProps> = ({
         <table className="min-w-full text-sm md:text-base">
           <thead>
             <tr className="text-left border-b">
-              <th className="px-4 py-2 w-2/3">Journal Name</th>
-              <th className="px-4 py-2 w-1/6">Category</th>
-              <th className="px-4 py-2 w-1/6">Rank</th>
-              <th className="px-4 py-2 w-1/12">Remove</th>
+              <th className={columnStyles.name}>Journal Name</th>
+              <th className={columnStyles.domain}>Domain</th>
+              <th className={columnStyles.category}>Rank</th>
+              <th className={columnStyles.remove}>Remove</th>
             </tr>
           </thead>
         </table>
@@ -48,10 +57,10 @@ const JournalDisplay: React.FC<JournalDisplayProps> = ({
           <tbody>
           {selectedJournals.map((journal, index) => (
               <tr key={index} className="border-b">
-                <td className="px-4 py-2 w-2/3">{journal.name}</td>
-                <td className="px-4 py-2 w-1/6">{journal.domain}</td>
-                <td className="px-4 py-2 w-1/6">{journal.category}</td>
-                <td className="px-4 py-2 text-center w-1/12">
+                <td className={columnStyles.name}>{journal.name}</td>
+                <td className={columnStyles.domain}>{journal.domain}</td>
+                <td className={columnStyles.category}>{journal.category}</td>
+                <td className={columnStyles.remove}>
                   <button
                     className="inline-flex items-center justify-center rounded-full bg-red-500 w-5 h-5 text-white font-bold text-lg hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-red-700 focus:ring-opacity-50"
                     onClick={() => onRemoveJournal(journal)}

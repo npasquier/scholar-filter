@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { Fragment, useEffect, useMemo, useState } from "react";
 import CustomDropdown from "./custom-items/CustomDropdown";
 
 interface Journal {
@@ -52,7 +52,7 @@ const JournalFilter: React.FC<JournalFilterProps> = ({
   ];
 
   const categories = [
-    { name: "Category", value: "" },
+    { name: "Domain", value: "" },
     { name: "AgrEnEnv", value: "AgrEnEnv" },
     { name: "CPT", value: "CPT" },
     { name: "DevTrans", value: "DevTrans" },
@@ -78,11 +78,66 @@ const JournalFilter: React.FC<JournalFilterProps> = ({
     { name: "TravPop", value: "TravPop" },
   ];
 
+  const categoryTranslation = [
+    { name: "AgrEnEnv", value: "Agriculture, Energy and Environment" },
+    { name: "CPT", value: "CPT" },
+    { name: "DevTrans", value: "Development and Transportation" },
+    { name: "EcoDroit", value: "Economic and Legal Studies" },
+    { name: "EcoPub", value: "Economic and Public Policy" },
+    { name: "Fin", value: "Finance" },
+    { name: "GEN", value: "General" },
+    { name: "GRH", value: "Human Resources Management" },
+    {
+      name: "HPEA",
+      value: "Healthcare, Pharmaceutical, and Environmental Analysis",
+    },
+    { name: "Innov", value: "Innovation" },
+    { name: "LOG", value: "Logistics" },
+    { name: "MKG", value: "Marketing" },
+    { name: "Macro", value: "Macroeconomics" },
+    { name: "Metrie", value: "Metrology and Measurement" },
+    { name: "MgPub", value: "Management and Public Policy" },
+    { name: "OrgInd", value: "Industrial Organization" },
+    { name: "RO", value: "Operations Research" },
+    { name: "SANT", value: "Health Sciences" },
+    { name: "SI", value: "Information Systems" },
+    { name: "Spatiale", value: "Spatial Analysis" },
+    { name: "StratOrg", value: "Strategic Organization" },
+    { name: "ThEco", value: "Theoretical Economics" },
+    { name: "TravPop", value: "Travel and Population Studies" },
+  ];
+
+  const categoryHTML = categoryTranslation
+    .filter(category => category.value !== "") // Filter out categories with an empty value
+    .map((category, index) => (
+      <Fragment key={index}>
+        <strong>{category.name}</strong>: <em>{category.value}</em>
+        <br />
+      </Fragment>
+    ));
+
+  const columnStyles = {
+    name: "w-3/6 px-4 py-2",
+    domain: "w-1/6 px-4 py-2 text-center",
+    category: "w-1/6 px-4 py-2 text-center",
+    add: "w-1/6 px-4 py-2 text-center",
+  };
+
   return (
     <div className="relative top-0 p-4 md:p-6 bg-white rounded-lg shadow-md">
-      <h3 className="font-semibold text-2xl text-center mb-6">
-        Available Journals
-      </h3>
+      <div className="flex items-center justify-center ">
+        <h3 className="font-semibold text-2xl text-center mb-6">
+          Available Journals
+        </h3>
+        <div className="group mb-auto">
+          *
+          <span className="absolute bottom-full max-md:left-6 z-10 -mb-6 hidden group-hover:inline-block w-80 text-center text-sm bg-black text-white p-2 rounded-xl shadow-lg">
+            Based on the categorization of journals in economics and management
+            by the CNRS in June 2020.
+          </span>
+        </div>
+      </div>
+
       <div className="flex flex-col md:flex-row md:items-center gap-4 mb-6">
         <input
           type="text"
@@ -118,10 +173,18 @@ const JournalFilter: React.FC<JournalFilterProps> = ({
         <table className="min-w-full text-sm md:text-base">
           <thead>
             <tr className="text-left border-b">
-              <th className="px-4 py-2">Journal Name</th>
-              <th className="px-4 py-2">Category</th>
-              <th className="px-4 py-2">Rank</th>
-              <th className="px-4 py-2">Add</th>
+              <th className={columnStyles.name}>Journal Name</th>
+              <th className={columnStyles.domain}>
+                Domain
+                <span className="group mb-auto">
+                  *{" "}
+                  <span className="absolute hidden bottom-full max-md:left-0 z-10 -mb-40 group-hover:inline-block w-80 text-left text-sm bg-black text-white p-2 rounded-xl shadow-lg">
+                    {categoryHTML}
+                  </span>
+                </span>
+              </th>
+              <th className={columnStyles.category}>Rank</th>
+              <th className={columnStyles.add}>Add</th>
             </tr>
           </thead>
         </table>
@@ -131,10 +194,10 @@ const JournalFilter: React.FC<JournalFilterProps> = ({
           <tbody>
             {filteredJournals.map((journal, index) => (
               <tr key={index} className="border-b">
-                <td className="px-4 py-2">{journal.name}</td>
-                <td className="px-4 py-2">{journal.domain}</td>
-                <td className="px-4 py-2">{journal.category}</td>
-                <td className="px-4 py-2 text-center">
+                <td className={columnStyles.name}>{journal.name}</td>
+                <td className={columnStyles.domain}>{journal.domain}</td>
+                <td className={columnStyles.category}>{journal.category}</td>
+                <td className={columnStyles.add}>
                   <button
                     className="inline-flex items-center justify-center rounded-full bg-green-500 w-5 h-5 text-white font-bold text-lg hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-700 focus:ring-opacity-50"
                     onClick={() => onAddJournal(journal)}
@@ -147,7 +210,6 @@ const JournalFilter: React.FC<JournalFilterProps> = ({
           </tbody>
         </table>
       </div>
-
     </div>
   );
 };
