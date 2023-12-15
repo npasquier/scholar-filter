@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import JournalDisplay from "./JournalDisplay";
 import JournalFilter from "./JournalFilter";
 
@@ -20,9 +20,26 @@ const JournalManager: React.FC<JournalManagerProps> = ({ journals }) => {
 
   const [query, setQuery] = useState("");
 
+  const [authorQuery, setAuthorQuery] = useState("");
+  const [startYear, setStartYear] = useState("");
+  const [endYear, setEndYear] = useState("");
+
+  const handleAuthorQuery = (e: any) => {
+    setAuthorQuery(e.target.value);
+  };
+
+  const handleStartYear = (e: any) => {
+    setStartYear(e.target.value);
+  };
+
+  const handleEndYear = (e: any) => {
+    setEndYear(e.target.value);
+  };
+
   const handleQueryChange = (e: any) => {
     setQuery(e.target.value);
   };
+
   const handleAddJournal = (journalToAdd: Journal) => {
     setSelectedJournals((prev) => {
       if (prev.find((j) => j.issn === journalToAdd.issn)) {
@@ -47,12 +64,19 @@ const JournalManager: React.FC<JournalManagerProps> = ({ journals }) => {
           `source%3A"${encodeURIComponent(journal.name).replace(/%20/g, "+")}"`
       )
       .join("+OR+");
-    const finalUrl = `${baseUrl}${queryParam}+${sourceParam}`;
+
+    const queryAuthor =
+      authorQuery && `author%3A"${encodeURIComponent(authorQuery)}"`;
+    const queryStartYear = startYear && `as_ylo=${startYear}`;
+    const queryEndYear = endYear && `as_yhi=${endYear}`;
+
+    const finalUrl = `${baseUrl}${queryParam}+${sourceParam}+${queryAuthor}&as_ylo=${queryStartYear}&as_yhi=${endYear}`;
     window.open(finalUrl, "_blank");
   };
 
   return (
-    <div className="w-full md:w-[80%] mx-auto"> {/* Adjust width for mobile */}
+    <div className="w-full md:w-[80%] mx-auto">
+      {" "}
       <div className="mx-auto mt-0 mb-16 text-center">
         <input
           type="text"
@@ -69,15 +93,57 @@ const JournalManager: React.FC<JournalManagerProps> = ({ journals }) => {
           Search on Google Scholar
         </button>
       </div>
-      <div className="grid grid-cols-1  md:grid-cols-2 gap-6 mt-6"> {/* Responsive grid */}
+      <div className="grid grid-cols-1  md:grid-cols-2 gap-6 mt-6">
+        {" "}
         <div>
           <JournalFilter journals={journals} onAddJournal={handleAddJournal} />
         </div>
         <div className="max-md:order-first">
-          <JournalDisplay
-            selectedJournals={selectedJournals}
-            onRemoveJournal={handleRemoveJournal}
-          />
+          <div className="relative top-0 p-4 md:p-6 bg-white rounded-lg shadow-md">
+            <h3 className="font-semibold text-2xl text-center mb-6">Filter</h3>
+            <div className="mb-6 bg-gray-100 p-4 rounded-lg">
+              <p className="font-semibold text-lg text-center mb-4 ">🗓️ Date</p>
+              <div className="flex justify-center items-center gap-2">
+                <span>From</span>
+                <input
+                  type="text"
+                  value={startYear}
+                  placeholder="yyyy"
+                  className="w-full md:w-1/6 px-4 py-2 placeholder-gray-500 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-slate-300 focus:border-transparent"
+                  onChange={handleStartYear}
+                />
+
+                <span>To</span>
+                <input
+                  type="text"
+                  value={endYear}
+                  placeholder="yyyy"
+                  className="w-full md:w-1/6 px-4 py-2 placeholder-gray-500 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-slate-300 focus:border-transparent"
+                  onChange={handleEndYear}
+                />
+              </div>
+            </div>
+
+            <div className="mb-6 bg-gray-100 p-4 rounded-lg">
+              <p className="font-semibold text-lg text-center mb-4 ">
+                ✍️ Author
+              </p>
+              <div className="flex justify-center items-center">
+                <input
+                  type="text"
+                  placeholder="Author name"
+                  value={authorQuery}
+                  className="w-full md:w-3/6 px-4 py-2 placeholder-gray-500 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-slate-300 focus:border-transparent"
+                  onChange={handleAuthorQuery}
+                />
+              </div>
+            </div>
+
+            <JournalDisplay
+              selectedJournals={selectedJournals}
+              onRemoveJournal={handleRemoveJournal}
+            />
+          </div>
         </div>
       </div>
     </div>

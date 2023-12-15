@@ -23,7 +23,7 @@ const CustomDropdown: React.FC<CustomDropdownProps> = ({
   };
 
   return (
-    <div className="relative w-32 mr-6 ">
+    <div className={`relative  ${items[0].name == "Category" ? "w-32" : "w-24"}`}>
       <button
         onClick={toggleDropdown}
         className="text-left w-full px-3 py-2 bg-[#afaeae08] text-[#191919] border border-gray-300 rounded-md shadow-sm"
@@ -34,7 +34,6 @@ const CustomDropdown: React.FC<CustomDropdownProps> = ({
             : items[0].name}
         </span>
         {!filter && <span className="text-zinc-400"> &#9660;</span>}{" "}
-        {/* This is the down arrow symbol */}{" "}
       </button>
       {isOpen && (
         <div className="absolute top-0 w-full  bg-white border border-gray-300 rounded-md shadow-lg z-10">

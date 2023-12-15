@@ -79,52 +79,75 @@ const JournalFilter: React.FC<JournalFilterProps> = ({
   ];
 
   return (
-    <div className="relative top-0 p-4 md:p-0">
-      {" "}
-      {/* Added padding for mobile */}
-      <h3 className="font-semibold text-xl text-center my-3">Journal Filter</h3>
-      <div className="flex flex-col md:flex-row md:items-center max-md:gap-2">
-        {" "}
-        {/* Responsive flex container */}
+    <div className="relative top-0 p-4 md:p-6 bg-white rounded-lg shadow-md">
+      <h3 className="font-semibold text-2xl text-center mb-6">
+        Available Journals
+      </h3>
+      <div className="flex flex-col md:flex-row md:items-center gap-4 mb-6">
         <input
           type="text"
           placeholder="Search by name..."
           value={filterText}
-          className="w-full md:w-64 mb-4 md:mb-0 md:mr-6 px-3 py-2 placeholder-gray-500 border border-gray-300 rounded-md shadow-sm outline-none focus:outline-none focus:ring-2 focus:ring-slate-300 focus:border-transparent" // Responsive width and margin
+          className="w-full md:w-1/3 px-4 py-3 placeholder-gray-500 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-slate-300 focus:border-transparent"
           onChange={(e) => setFilterText(e.target.value)}
         />
-        <div className="flex">
+        <div className="flex gap-2 max-md:mx-auto">
           <CustomDropdown
             setFilter={setFilterDomain}
             filter={filterDomain}
             items={categories}
           />
-
           <CustomDropdown
             setFilter={setFilterRank}
             filter={filterRank}
             items={ranks}
           />
         </div>
+
+        <button
+          className="max-md:mx-auto relative inline-flex items-center justify-center rounded-full bg-green-500 w-20 h-8 text-white text-sm hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-700 focus:ring-opacity-50 my-2"
+          onClick={() =>
+            filteredJournals.forEach((journal) => onAddJournal(journal))
+          }
+        >
+          Add All
+        </button>
       </div>
-      <div className="mt-4">
-        {filteredJournals.map((journal, index) => (
-          <div key={index} className="mb-2">
-            {" "}
-            {/* Added margin between items */}
-            <button
-              className="relative inline-flex items-center justify-center rounded-full bg-green-500 w-5 h-5 text-white font-bold text-lg hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-700 focus:ring-opacity-50 mr-2"
-              onClick={() => onAddJournal(journal)}
-            >
-              +
-            </button>
-            <span className="text-sm md:text-base">
-              {journal.name} - {journal.domain} - Rank: {journal.category}
-            </span>{" "}
-            {/* Responsive text size */}
-          </div>
-        ))}
+
+      <div className="overflow-x-auto">
+        <table className="min-w-full text-sm md:text-base">
+          <thead>
+            <tr className="text-left border-b">
+              <th className="px-4 py-2">Journal Name</th>
+              <th className="px-4 py-2">Category</th>
+              <th className="px-4 py-2">Rank</th>
+              <th className="px-4 py-2">Add</th>
+            </tr>
+          </thead>
+        </table>
       </div>
+      <div className="overflow-x-auto relative max-h-[800px] overflow-y-auto">
+        <table className="min-w-full text-sm md:text-base">
+          <tbody>
+            {filteredJournals.map((journal, index) => (
+              <tr key={index} className="border-b">
+                <td className="px-4 py-2">{journal.name}</td>
+                <td className="px-4 py-2">{journal.domain}</td>
+                <td className="px-4 py-2">{journal.category}</td>
+                <td className="px-4 py-2 text-center">
+                  <button
+                    className="inline-flex items-center justify-center rounded-full bg-green-500 w-5 h-5 text-white font-bold text-lg hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-700 focus:ring-opacity-50"
+                    onClick={() => onAddJournal(journal)}
+                  >
+                    +
+                  </button>
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+
     </div>
   );
 };
