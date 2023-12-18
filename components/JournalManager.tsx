@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import JournalDisplay from "./JournalDisplay";
 import JournalFilter from "./JournalFilter";
 
@@ -57,7 +57,7 @@ const JournalManager: React.FC<JournalManagerProps> = ({ journals }) => {
 
   const handleSubmit = () => {
     const baseUrl = "https://scholar.google.com/scholar?";
-    const queryParam = `as_q=${encodeURIComponent(query)}`;
+    const queryParam = `q=${encodeURIComponent(query)}`;
     const sourceParam = selectedJournals
       .map(
         (journal: any) =>
@@ -142,6 +142,7 @@ const JournalManager: React.FC<JournalManagerProps> = ({ journals }) => {
             <JournalDisplay
               selectedJournals={selectedJournals}
               onRemoveJournal={handleRemoveJournal}
+              onAddJournal={handleAddJournal}
             />
           </div>
         </div>

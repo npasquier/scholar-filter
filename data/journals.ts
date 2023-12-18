@@ -216,7 +216,7 @@ const journals =  [
         "category": 1
     },
     {
-        "name": "Brussels Economic Review / Cahiers \u00c9conomiques de Bruxelles \u2020",
+        "name": "Brussels Economic Review / Cahiers \u00c9conomiques de Bruxelles",
         "issn": "0008-0195",
         "domain": "GEN",
         "category": 4
@@ -456,7 +456,7 @@ const journals =  [
         "category": 4
     },
     {
-        "name": "\u00c9conomie et Pr\u00e9vision (articles acad\u00e9miques)",
+        "name": "\u00c9conomie et Pr\u00e9vision",
         "issn": "0249-4744",
         "domain": "GEN",
         "category": 3
@@ -714,7 +714,7 @@ const journals =  [
         "category": 4
     },
     {
-        "name": "Histoire \u00c9conomique Quantitative (E&S, s\u00e9rie AF) \u2020",
+        "name": "Histoire \u00c9conomique Quantitative",
         "issn": "0013-0567",
         "domain": "HPEA",
         "category": 4
@@ -1758,7 +1758,7 @@ const journals =  [
         "category": 2
     },
     {
-        "name": "Recherches \u00c9conomiques de Louvain / Louvain Economic Review \u2020",
+        "name": "Recherches \u00c9conomiques de Louvain / Louvain Economic Review",
         "issn": "0770-4518",
         "domain": "GEN",
         "category": 3
@@ -1878,7 +1878,7 @@ const journals =  [
         "category": 2
     },
     {
-        "name": "Revue d'Histoire de la Pens\u00e9e Economique (anc. E&S, Histoire de la Pens\u00e9e Economique)",
+        "name": "Revue d'Histoire de la Pens\u00e9e Economique",
         "issn": "2496-4646",
         "domain": "HPEA",
         "category": 4
@@ -1896,7 +1896,7 @@ const journals =  [
         "category": 3
     },
     {
-        "name": "Revue Fran\u00e7aise de Gestion Industrielle \u2020",
+        "name": "Revue Fran\u00e7aise de Gestion Industrielle",
         "issn": "0242-9780",
         "domain": "LOG",
         "category": 4
@@ -2370,7 +2370,7 @@ const journals =  [
         "category": 4
     },
     {
-        "name": "Syst\u00e8mes Alimentaires / Food Systems (anc. E&S, Syst\u00e8mes Agroalimentaires)",
+        "name": "Syst\u00e8mes Alimentaires / Food Systems",
         "issn": "2555-4670",
         "domain": "AgrEnEnv",
         "category": 4
@@ -2772,7 +2772,7 @@ const journals =  [
         "category": 4
     },
     {
-        "name": "\u00c9conomie Publique \u2020",
+        "name": "\u00c9conomie Publique",
         "issn": "1373-8496",
         "domain": "EcoPub",
         "category": 4
@@ -2928,7 +2928,7 @@ const journals =  [
         "category": 3
     },
     {
-        "name": "Geneva Papers on Risk and Insurance - Issues and Practices",
+        "name": "Geneva Papers on Risk and Insurance",
         "issn": "1018-5895",
         "domain": "Fin",
         "category": 3
@@ -3228,12 +3228,6 @@ const journals =  [
         "category": 4
     },
     {
-        "name": "1267-4982 /",
-        "issn": "2032-5355",
-        "domain": "Innov",
-        "category": 4
-    },
-    {
         "name": "International Entrepreneurship and Management Journal",
         "issn": "1554-7191",
         "domain": "Innov",
@@ -3414,7 +3408,7 @@ const journals =  [
         "category": 3
     },
     {
-        "name": "International Monetary Fund Staff Papers \u2020",
+        "name": "International Monetary Fund Staff Papers",
         "issn": "1020-7635",
         "domain": "Macro",
         "category": 3
@@ -3528,7 +3522,7 @@ const journals =  [
         "category": 2
     },
     {
-        "name": "Journal of the Royal Statistical Society : Series B (Statistical Methodology)",
+        "name": "Journal of the Royal Statistical Society : Series B",
         "issn": "1369-7412",
         "domain": "Metrie",
         "category": 2
@@ -4098,7 +4092,7 @@ const journals =  [
         "category": 4
     },
     {
-        "name": "Entreprise et Soci\u00e9t\u00e9 (anc. E&S, s\u00e9ries Economie de l'Entreprise / Entreprise et Finance)",
+        "name": "Entreprise et Soci\u00e9t\u00e9",
         "issn": "2553-7830",
         "domain": "StratOrg",
         "category": 4
@@ -4272,13 +4266,13 @@ const journals =  [
         "category": 3
     },
     {
-        "name": "The B.E. Journal of Theoretical Economics (Research, anciennement Frontiers et Advances)",
+        "name": "The B.E. Journal of Theoretical Economics",
         "issn": "1935-1704",
         "domain": "ThEco",
         "category": 3
     },
     {
-        "name": "Math\u00e9matiques et Sciences Humaines \u2020",
+        "name": "Math\u00e9matiques et Sciences Humaines",
         "issn": "0987-6936",
         "domain": "ThEco",
         "category": 4
@@ -4398,7 +4392,7 @@ const journals =  [
         "category": 4
     },
     {
-        "name": "Socio-\u00c9conomie du Travail (anc. E&S, Economie du Travail)",
+        "name": "Socio-\u00c9conomie du Travail",
         "issn": "2554-9073",
         "domain": "TravPop",
         "category": 4

@@ -2,8 +2,8 @@ import Image from "next/image";
 
 const Footer = () => {
   return (
-    <footer className="flex flex-col my-5  relative bottom-0">
-      <div className="flex justify-between mx-auto pt-10">
+    <footer className="flex flex-col  relative bottom-0 h-14">
+      <div className="flex justify-between mx-auto mt-auto mb-3">
         <Image
           src="/search.svg"
           alt="logo"
