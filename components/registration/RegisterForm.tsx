@@ -45,6 +45,8 @@ const RegisterForm = () => {
   const [registrationError, setRegistrationError] = useState("");
 
   const onSubmit: SubmitHandler<FormData> = async (data) => {
+    setRegistering(true);
+
     try {
       const response = await axios.post(
         "/api/register",
@@ -52,10 +54,9 @@ const RegisterForm = () => {
       );
 
       if (response.status === 200) {
-        setRegistering(true);
         setTimeout(() => {
           setIsRegistered(true);
-        }, 3000);
+        }, 2000);
       } else {
         setRegistrationError("Registration failed. Please try again.");
       }
