@@ -1,8 +1,7 @@
 "use client";
 
-import { useSession } from "next-auth/react";
+import { signIn, signOut, useSession } from "next-auth/react";
 import Link from "next/link";
-import React from "react";
 import Image from "next/image";
 
 const NavBar = () => {
@@ -19,7 +18,9 @@ const NavBar = () => {
           height="30"
         />
         <div className="my-auto">
-          <Link href="/" className="text-md">Economic Search Filter</Link>
+          <Link href="/" className="text-md">
+            Economic Search Filter
+          </Link>
         </div>
       </div>
       <div className="flex gap-4">
@@ -31,12 +32,12 @@ const NavBar = () => {
         {status === "authenticated" && (
           <>
             <div>{session.user!.name}</div>
-            <Link
-              href="/api/auth/signout"
+            <button
+              onClick={() => signOut()}
               className="text-red-800 font-semibold hover:elm-bg-color hover:text-[#1d7a85] transition duration-300 ease-in-out"
             >
               Sign Out
-            </Link>
+            </button>
           </>
         )}
         {status === "unauthenticated" && (
@@ -47,12 +48,12 @@ const NavBar = () => {
             >
               Register
             </Link>
-            <Link
-              href="/api/auth/signin"
+            <button
+              onClick={() => signIn()}
               className="cold-gray-color font-semibold hover:elm-bg-color hover:text-[#1d7a85] transition duration-300 ease-in-out"
             >
               Login
-            </Link>
+            </button>
           </div>
         )}
         <Link
