@@ -28,6 +28,10 @@ const authOptions: NextAuthOptions = {
           return null;
         }
 
+        if (!user.emailVerified) {
+          throw new Error('Email not verified');
+        }
+
         const passwordMatched = await bcrypt.compare(
           credentials.password,
           user.hashpassword!

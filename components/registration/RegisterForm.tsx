@@ -17,7 +17,6 @@ type FormData = {
 };
 
 const RegisterForm = () => {
-  const router = useRouter();
 
   const [loaded, setLoaded] = useState(false);
 
@@ -56,7 +55,7 @@ const RegisterForm = () => {
       if (response.status === 200) {
         setTimeout(() => {
           setIsRegistered(true);
-        }, 2000);
+        }, 500);
       } else {
         setRegistrationError("Registration failed. Please try again.");
       }
@@ -74,13 +73,7 @@ const RegisterForm = () => {
     }
   };
 
-  useEffect(() => {
-    if (isRegistered) {
-      setTimeout(() => {
-        router.push("/");
-      }, 5500);
-    }
-  }, [isRegistered, router]);
+
 
   function calculatePasswordStrength(password: string): number {
     // Implement logic to calculate password strength
