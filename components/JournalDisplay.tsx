@@ -44,10 +44,7 @@ const JournalDisplay: React.FC<JournalDisplayProps> = ({
     setIsSaving(true);
 
     try {
-      const response = await axios.put(
-        "/api/favorite",
-        data
-      );
+      const response = await axios.put("/api/favorite", data);
 
       if (response.status === 200) {
         setTimeout(() => {
@@ -82,8 +79,12 @@ const JournalDisplay: React.FC<JournalDisplayProps> = ({
     try {
       const response = await axios.get("/api/favorite");
       const issnString = response.data.favorites;
-      const issnArray = issnString.split(", ").map((issn : string) => issn.trim());
-      const userFavorites = journals.filter(obj => issnArray.includes(obj.issn));
+      const issnArray = issnString
+        .split(", ")
+        .map((issn: string) => issn.trim());
+      const userFavorites = journals.filter((obj) =>
+        issnArray.includes(obj.issn)
+      );
       userFavorites.forEach((journal) => onAddJournal(journal));
       setTimeout(() => {
         setIsLoaded(true);
@@ -92,7 +93,6 @@ const JournalDisplay: React.FC<JournalDisplayProps> = ({
         setIsLoaded(false);
         setIsLoading(false);
       }, 400);
-
     } catch (error) {
       console.error("Error fetching data:", error);
     }
@@ -109,11 +109,11 @@ const JournalDisplay: React.FC<JournalDisplayProps> = ({
 
   return (
     <div className="mb-6 bg-gray-100 p-4 rounded-lg">
-      <p className="font-semibold text-lg text-center mb-4  ">
+      <p className="font-semibold text-lg text-center mb-4">
         📚 Selected Journals
       </p>
-      <div className="flex px-4">
-        <div className="flex mr-auto mb-4  gap-3">
+      <div className="flex flex-col md:flex-row px-4 mb-3 gap-3">
+        <div className="flex flex-wrap gap-3 my-auto mx-auto">
           Favorite:
           <div className="group relative">
             <button
@@ -170,7 +170,7 @@ const JournalDisplay: React.FC<JournalDisplayProps> = ({
         </div>
 
         <button
-          className="ml-auto relative inline-flex items-center justify-center rounded-lg bg-red-500 w-24 h-8 text-white text-sm hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-red-700 focus:ring-opacity-50"
+          className="max-md:ml-auto mx-auto relative inline-flex items-center justify-center rounded-lg bg-red-500 w-24 h-8 text-white text-sm hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-red-700 focus:ring-opacity-50"
           onClick={() =>
             selectedJournals.forEach((journal) => onRemoveJournal(journal))
           }
@@ -179,9 +179,9 @@ const JournalDisplay: React.FC<JournalDisplayProps> = ({
         </button>
       </div>
 
-      <div className="overflow-x-auto">
+      <div className="overflow-x-auto relative max-h-[440px] overflow-y-auto">
         <table className="min-w-full text-sm md:text-base">
-          <thead>
+          <thead className="bg-gray-50  sticky top-0">
             <tr className="text-left border-b">
               <th className={columnStyles.name}>Journal Name</th>
               <th className={columnStyles.domain}>Domain</th>
@@ -189,10 +189,6 @@ const JournalDisplay: React.FC<JournalDisplayProps> = ({
               <th className={columnStyles.remove}>Remove</th>
             </tr>
           </thead>
-        </table>
-      </div>
-      <div className="overflow-x-auto relative max-h-[440px] overflow-y-auto">
-        <table className="min-w-full text-sm md:text-base">
           <tbody>
             {selectedJournals.map((journal, index) => (
               <tr key={index} className="border-b">
