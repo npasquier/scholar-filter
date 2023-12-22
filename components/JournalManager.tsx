@@ -96,7 +96,7 @@ const JournalManager: React.FC<JournalManagerProps> = ({ journals }) => {
       <div className="grid grid-cols-1  md:grid-cols-2 gap-6 mt-6">
         {" "}
         <div>
-          <JournalFilter journals={journals} onAddJournal={handleAddJournal} />
+          <JournalFilter journals={journals} onAddJournal={handleAddJournal} passedSelectedJournals={selectedJournals}/>
         </div>
         <div className="max-md:order-first">
           <div className="relative top-0 p-4 md:p-6 bg-white rounded-lg shadow-md">

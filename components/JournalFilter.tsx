@@ -14,13 +14,16 @@ interface Journal {
 
 interface JournalFilterProps {
   journals: Journal[];
+  passedSelectedJournals: Journal[];
   onAddJournal: (journalToAdd: Journal) => void;
 }
 
 const JournalFilter: React.FC<JournalFilterProps> = ({
   journals,
+  passedSelectedJournals,
   onAddJournal,
 }) => {
+
   const [filterText, setFilterText] = useState("");
   const [filterRank, setFilterRank] = useState("");
   const [filterDomain, setFilterDomain] = useState("");
@@ -38,12 +41,6 @@ const JournalFilter: React.FC<JournalFilterProps> = ({
     );
     setFilteredJournals(filtered);
   }, [filterText, filterRank, filterDomain, journals]);
-
-  // Getting categories
-  // const categories = useMemo(() => {
-  //   const allCategories = journals.map((journal) => journal.domain);
-  //   return Array.from(new Set(allCategories)).sort();
-  // }, [journals]);
 
   const ranks = [
     { name: "Rank", value: "" },
@@ -138,13 +135,14 @@ const JournalFilter: React.FC<JournalFilterProps> = ({
           </thead>
           <tbody>
             {filteredJournals.map((journal, index) => (
-              <tr key={index} className="border-b">
+              <tr key={index} className={`border-b ${passedSelectedJournals.some(j => j.issn === journal.issn) && "bg-gray-200 line-through opacity-20" }`}>
                 <td className={columnStyles.name}>{journal.name}</td>
                 <td className={columnStyles.domain}>{journal.domain}</td>
                 <td className={columnStyles.category}>{journal.category}</td>
                 <td className={columnStyles.add}>
                   <button
-                    className="inline-flex items-center justify-center rounded-full bg-green-500 w-5 h-5 text-white font-bold text-lg hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-700 focus:ring-opacity-50"
+                  disabled={passedSelectedJournals.some(j => j.issn === journal.issn)}
+                    className={`inline-flex items-center justify-center rounded-full w-5 h-5 text-white font-bold text-lg ${ !passedSelectedJournals.some(j => j.issn === journal.issn) ?  "bg-green-500 hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-700 focus:ring-opacity-50" : "cursor-not-allowed bg-gray-500 opacity-20" } }`}
                     onClick={() => onAddJournal(journal)}
                   >
                     +
