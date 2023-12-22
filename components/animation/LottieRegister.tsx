@@ -8,8 +8,8 @@ const LottieRegister = () => {
       autoplay
       loop
       src="/register.json"
-      style={{ height: "400px", width: "400px" }}
-    />
+      className="h-[300px] w-[300px] md:h-[400px] md:w-[400px] " 
+      />
   );
 };
 

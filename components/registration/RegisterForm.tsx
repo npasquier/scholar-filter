@@ -129,7 +129,7 @@ const RegisterForm = () => {
 
   if (isRegistered) {
     return (
-      <div>
+      <div className="flex mx-auto">
         <LottieSuccess />
       </div>
     );
@@ -193,7 +193,7 @@ const RegisterForm = () => {
             )}
 
             <div className="flex items-center justify-left ml-4 gap-3">
-              <div className="group relative mb-auto">
+              <div className="group relative my-auto">
                 <Image src="/info.svg" alt="info" width={20} height={20} />
                 <span className="group absolute left-0 z-10 mt-2 hidden group-hover:inline-block w-80 text-center text-sm bg-black text-white p-2 rounded-xl shadow-lg">
                   Password must have at least 8 characters. Its strength
@@ -207,7 +207,7 @@ const RegisterForm = () => {
                   hashed password that will be stored in the database.
                 </span>
               </div>
-              <span className="text-gray-400">Password Strength: </span>
+              <span className="text-gray-400 text-sm">Password Strength: </span>
 
               <div className="password-strength-meter w-80 bg-gray-200 rounded-full h-2.5 mr-2">
                 <div
@@ -217,7 +217,7 @@ const RegisterForm = () => {
                   style={{ width: `${(passwordStrength / 4) * 100}%` }} // Assuming passwordStrength is a value between 0 and 4
                 ></div>
               </div>
-              <span className={`${getStrengthTextColor(passwordStrength)}`}>
+              <span className={`${getStrengthTextColor(passwordStrength)} text-sm`}>
                 {getStrengthText(passwordStrength)}
               </span>
             </div>

@@ -1,8 +1,8 @@
 
 const AboutPage: React.FC = () => {
   return (
-    <main className="flex flex-col items-center gap-9 px-4 md:px-20  py-12 bombay-bg-color cold-gray-color">
-      <div className="container mx-auto px-16 py-6">
+    <main className="flex flex-col  items-center gap-9 px-4 md:px-64  py-12 bombay-bg-color cold-gray-color">
+      <div className="container mx-auto px-1 py-6 max-md:w-full">
         <h1 className="text-3xl md:text-4xl font-bold text-center mb-8">
           About this web app.
         </h1>
