@@ -76,7 +76,7 @@ const JournalFilter: React.FC<JournalFilterProps> = ({
           <Image src="/info.svg" alt="info" width={20} height={20} />
           <span className="absolute bottom-full max-md:left-6 z-10 -mb-6 hidden group-hover:inline-block w-80 text-center text-sm bg-black text-white p-2 rounded-xl shadow-lg">
             Based on the categorization of journals in economics and management
-            by the CNRS in June 2020.
+            by the CNRS in June 2020 available <a target="_blank" rel="noopener noreferrer" href="https://www.gate.cnrs.fr/wp-content/uploads/2021/12/categorisation37_liste_juin_2020-2.pdf">here</a>
           </span>
         </div>
       </div>

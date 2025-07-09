@@ -110,7 +110,7 @@ const JournalDisplay: React.FC<JournalDisplayProps> = ({
   return (
     <div className="mb-6 bg-gray-100 p-4 rounded-lg">
       <p className="font-semibold text-lg text-center mb-4">
-        📚 Selected Journals
+        📚 Selected Journals (max 30)
       </p>
       <div className="flex flex-col md:flex-row px-4 mb-3 gap-3">
         <div className="flex flex-wrap gap-3 my-auto mx-auto">
