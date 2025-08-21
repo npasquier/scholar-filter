@@ -1,6 +1,6 @@
 'use client';
 
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import JournalDisplay from './JournalDisplay';
 import JournalFilter from './JournalFilter';
 import { toast, ToastContainer } from 'react-toastify';
@@ -26,8 +26,6 @@ const JournalManager: React.FC<JournalManagerProps> = ({ journals }) => {
   const [startYear, setStartYear] = useState('');
   const [endYear, setEndYear] = useState('');
 
-  const alertShownRef = useRef(false);
-
   const handleAuthorQuery = (e: any) => {
     setAuthorQuery(e.target.value);
   };
@@ -43,6 +41,8 @@ const JournalManager: React.FC<JournalManagerProps> = ({ journals }) => {
   const handleQueryChange = (e: any) => {
     setQuery(e.target.value);
   };
+
+  const alertShownRef = useRef(false);
 
   const handleAddJournal = (journalToAdd: Journal) => {
     setSelectedJournals((prev) => {
@@ -93,7 +93,7 @@ const JournalManager: React.FC<JournalManagerProps> = ({ journals }) => {
 
   return (
     <div className='w-full md:w-[80%] mx-auto'>
-      <ToastContainer position='top-right' autoClose={3000} />{' '}
+      <ToastContainer position='top-right' autoClose={3000} />
       <div className='mx-auto mt-0 mb-16 text-center'>
         <input
           type='text'

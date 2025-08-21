@@ -2136,6 +2136,1182 @@ const journals =  [
         "issn": "0987-6936",
         "domain": "ThEco",
         "category": 4
+    },
+   // ************ TravPop ***************
+   {
+        "name": "Demography",
+        "issn": "0070-3370",
+        "domain": "TravPop",
+        "category": 1
+    },
+    {
+        "name": "Journal of Human Resources",
+        "issn": "0022-166X",
+        "domain": "TravPop",
+        "category": 1
+    },
+    {
+        "name": "Journal of Labor Economics",
+        "issn": "0734-306X",
+        "domain": "TravPop",
+        "category": 1
+    },
+    {
+        "name": "Economics of Education Review",
+        "issn": "0272-7757",
+        "domain": "TravPop",
+        "category": 2
+    },
+    {
+        "name": "ILR Review",
+        "issn": "0019-7939",
+        "domain": "TravPop",
+        "category": 2
+    },
+    {
+        "name": "Journal of Human Capital",
+        "issn": "1932-8575",
+        "domain": "TravPop",
+        "category": 2
+    },
+    {
+        "name": "Journal of Population Economics",
+        "issn": "0933-1433",
+        "domain": "TravPop",
+        "category": 2
+    },
+    {
+        "name": "Labour Economics",
+        "issn": "0927-5371",
+        "domain": "TravPop",
+        "category": 2
+    },
+    {
+        "name": "Education Economics",
+        "issn": "0964-5292",
+        "domain": "TravPop",
+        "category": 3
+    },
+    {
+        "name": "European Journal of Population",
+        "issn": "0168-6577",
+        "domain": "TravPop",
+        "category": 3
+    },
+    {
+        "name": "International Journal of Manpower",
+        "issn": "0143-7720",
+        "domain": "TravPop",
+        "category": 3
+    },
+    {
+        "name": "International Labour Review",
+        "issn": "0020-7780",
+        "domain": "TravPop",
+        "category": 3
+    },
+    {
+        "name": "Journal of Economic Education",
+        "issn": "0022-0485",
+        "domain": "TravPop",
+        "category": 3
+    },
+    {
+        "name": "Journal of Pension Economics and Finance",
+        "issn": "1474-7472",
+        "domain": "TravPop",
+        "category": 3
+    },
+    {
+        "name": "Labour: Review of Labour Economics and Industrial Relations",
+        "issn": "1121-7081",
+        "domain": "TravPop",
+        "category": 3
+    },
+    {
+        "name": "Population",
+        "issn": "0032-4663",
+        "domain": "TravPop",
+        "category": 3
+    },
+    {
+        "name": "Review of Economics of the Household",
+        "issn": "1569-5239",
+        "domain": "TravPop",
+        "category": 3
+    },
+    {
+        "name": "Formation Emploi",
+        "issn": "0759-6340",
+        "domain": "TravPop",
+        "category": 4
+    },
+    {
+        "name": "Journal of Labor Research",
+        "issn": "0195-3613",
+        "domain": "TravPop",
+        "category": 4
+    },
+    {
+        "name": "Monthly Labor Review",
+        "issn": "0098-1818",
+        "domain": "TravPop",
+        "category": 4
+    },
+    {
+        "name": "Population Research and Policy Review",
+        "issn": "0167-5923",
+        "domain": "TravPop",
+        "category": 4
+    },
+    {
+        "name": "Socio-Économie du Travail (anc. E&S, Economie du Travail)",
+        "issn": "2554-9073",
+        "domain": "TravPop",
+        "category": 4
+    },
+    {
+        "name": "Travail et Emploi",
+        "issn": "0224-4365",
+        "domain": "TravPop",
+        "category": 4
+    },
+    // ************ Innov ***************
+    {
+        "name": "Entrepreneurship: Theory and Practice",
+        "issn": "1042-2587",
+        "domain": "Innov",
+        "category": 1
+    },
+    {
+        "name": "Industrial and Corporate Change",
+        "issn": "0960-6491",
+        "domain": "Innov",
+        "category": 1
+    },
+    {
+        "name": "Journal of Business Venturing",
+        "issn": "0883-9026",
+        "domain": "Innov",
+        "category": 1
+    },
+    {
+        "name": "Journal of Product Innovation Management",
+        "issn": "0737-6782",
+        "domain": "Innov",
+        "category": 1
+    },
+    {
+        "name": "Research Policy",
+        "issn": "0048-7333",
+        "domain": "Innov",
+        "category": 1
+    },
+    {
+        "name": "Family Business Review",
+        "issn": "0894-4865",
+        "domain": "Innov",
+        "category": 2
+    },
+    {
+        "name": "International Small Business Journal",
+        "issn": "0266-2426",
+        "domain": "Innov",
+        "category": 2
+    },
+    {
+        "name": "Journal of Small Business Management",
+        "issn": "0047-2778",
+        "domain": "Innov",
+        "category": 2
+    },
+    {
+        "name": "Strategic Entrepreneurship Journal",
+        "issn": "1932-4391",
+        "domain": "Innov",
+        "category": 2
+    },
+    {
+        "name": "Technological Forecasting and Social Change",
+        "issn": "0040-1625",
+        "domain": "Innov",
+        "category": 2
+    },
+    {
+        "name": "Technovation",
+        "issn": "0166-4972",
+        "domain": "Innov",
+        "category": 2
+    },
+    {
+        "name": "Creativity and Innovation Management",
+        "issn": "0963-1690",
+        "domain": "Innov",
+        "category": 3
+    },
+    {
+        "name": "Economics of Innovation and New Technology",
+        "issn": "1043-8599",
+        "domain": "Innov",
+        "category": 3
+    },
+    {
+        "name": "Entrepreneurship and Regional Development",
+        "issn": "0898-5626",
+        "domain": "Innov",
+        "category": 3
+    },
+    {
+        "name": "Eurasian Business Review",
+        "issn": "1309-4297",
+        "domain": "Innov",
+        "category": 3
+    },
+    {
+        "name": "IEEE Transactions on Engineering Management",
+        "issn": "0018-9391",
+        "domain": "Innov",
+        "category": 3
+    },
+    {
+        "name": "Industry and Innovation",
+        "issn": "1366-2716",
+        "domain": "Innov",
+        "category": 3
+    },
+    {
+        "name": "International Journal of Technology Management",
+        "issn": "0267-5730",
+        "domain": "Innov",
+        "category": 3
+    },
+    {
+        "name": "Journal of Engineering and Technology Management",
+        "issn": "0923-4748",
+        "domain": "Innov",
+        "category": 3
+    },
+    {
+        "name": "Journal of Technology Transfer",
+        "issn": "0892-9912",
+        "domain": "Innov",
+        "category": 3
+    },
+    {
+        "name": "R&D Management",
+        "issn": "0033-6807",
+        "domain": "Innov",
+        "category": 3
+    },
+    {
+        "name": "European Journal of Innovation Management",
+        "issn": "1460-1060",
+        "domain": "Innov",
+        "category": 4
+    },
+    {
+        "name": "Innovations : Revue d'Economie et de Management de l'Innovation / Journal of Innovation Economics and Management",
+        "issn": "1267-4982 / 2032-5355",
+        "domain": "Innov",
+        "category": 4
+    },
+    {
+        "name": "International Entrepreneurship and Management Journal",
+        "issn": "1554-7191",
+        "domain": "Innov",
+        "category": 4
+    },
+    {
+        "name": "International Journal of Entrepreneurial Behaviour and Research",
+        "issn": "1355-2554",
+        "domain": "Innov",
+        "category": 4
+    },
+    {
+        "name": "International Journal of Entrepreneurship and Innovation",
+        "issn": "1465-7503",
+        "domain": "Innov",
+        "category": 4
+    },
+    {
+        "name": "International Journal of Entrepreneurship and Innovation Management",
+        "issn": "1368-275X",
+        "domain": "Innov",
+        "category": 4
+    },
+    {
+        "name": "International Journal of Entrepreneurship and Small Business",
+        "issn": "1476-1297",
+        "domain": "Innov",
+        "category": 4
+    },
+    {
+        "name": "International Journal of Gender and Entrepreneurship",
+        "issn": "1756-6266",
+        "domain": "Innov",
+        "category": 4
+    },
+    {
+        "name": "International Journal of Innovation Management",
+        "issn": "1363-9196",
+        "domain": "Innov",
+        "category": 4
+    },
+    {
+        "name": "Journal of Enterprising Culture",
+        "issn": "0218-4958",
+        "domain": "Innov",
+        "category": 4
+    },
+    {
+        "name": "Journal of High Technology Management Research",
+        "issn": "1047-8310",
+        "domain": "Innov",
+        "category": 4
+    },
+    {
+        "name": "Journal of International Entrepreneurship",
+        "issn": "1570-7385",
+        "domain": "Innov",
+        "category": 4
+    },
+    {
+        "name": "Journal of Small Business and Enterprise Development",
+        "issn": "1462-6004",
+        "domain": "Innov",
+        "category": 4
+    },
+    {
+        "name": "Revue de l'Entrepreneuriat",
+        "issn": "1630-7542",
+        "domain": "Innov",
+        "category": 4
+    },
+    {
+        "name": "Revue Internationale PME",
+        "issn": "0776-5436",
+        "domain": "Innov",
+        "category": 4
+    },
+    // ************ HPEA ***************
+    {
+        "name": "Economic History Review",
+        "issn": "0013-0117",
+        "domain": "HPEA",
+        "category": 1
+    },
+    {
+        "name": "European Journal of the History of Economic Thought",
+        "issn": "0967-2567",
+        "domain": "HPEA",
+        "category": 1
+    },
+    {
+        "name": "History of Political Economy",
+        "issn": "0018-2702",
+        "domain": "HPEA",
+        "category": 1
+    },
+    {
+        "name": "Journal of Economic History",
+        "issn": "0022-0507",
+        "domain": "HPEA",
+        "category": 1
+    },
+    {
+        "name": "Accounting History Review",
+        "issn": "2155-2851",
+        "domain": "HPEA",
+        "category": 2
+    },
+    {
+        "name": "Business History",
+        "issn": "0007-6791",
+        "domain": "HPEA",
+        "category": 2
+    },
+    {
+        "name": "Cliometrica",
+        "issn": "1863-2513",
+        "domain": "HPEA",
+        "category": 2
+    },
+    {
+        "name": "European Review of Economic History",
+        "issn": "1361-4916",
+        "domain": "HPEA",
+        "category": 2
+    },
+    {
+        "name": "Explorations in Economic History",
+        "issn": "0014-4983",
+        "domain": "HPEA",
+        "category": 2
+    },
+    {
+        "name": "Journal of Economic Methodology",
+        "issn": "1350-178X",
+        "domain": "HPEA",
+        "category": 2
+    },
+    {
+        "name": "Journal of the History of Economic Thought",
+        "issn": "1042-7716",
+        "domain": "HPEA",
+        "category": 2
+    },
+    {
+        "name": "Politics, Philosophy & Economics",
+        "issn": "1470-594X",
+        "domain": "HPEA",
+        "category": 2
+    },
+    {
+        "name": "Accounting Historians Journal",
+        "issn": "0148-4184",
+        "domain": "HPEA",
+        "category": 3
+    },
+    {
+        "name": "Accounting History",
+        "issn": "1032-3732",
+        "domain": "HPEA",
+        "category": 3
+    },
+    {
+        "name": "Australian Economic History Review",
+        "issn": "0004-8992",
+        "domain": "HPEA",
+        "category": 3
+    },
+    {
+        "name": "Business History Review",
+        "issn": "0007-6805",
+        "domain": "HPEA",
+        "category": 3
+    },
+    {
+        "name": "Cahiers d'Économie Politique",
+        "issn": "0154-8344",
+        "domain": "HPEA",
+        "category": 3
+    },
+    {
+        "name": "Enterprise & Society",
+        "issn": "1467-2227",
+        "domain": "HPEA",
+        "category": 3
+    },
+    {
+        "name": "Financial History Review",
+        "issn": "0968-5650",
+        "domain": "HPEA",
+        "category": 3
+    },
+    {
+        "name": "History of Economic Ideas",
+        "issn": "1122-8792",
+        "domain": "HPEA",
+        "category": 3
+    },
+    {
+        "name": "Oeconomia",
+        "issn": "2113-5207",
+        "domain": "HPEA",
+        "category": 3
+    },
+    {
+        "name": "Revue de Philosophie Économique",
+        "issn": "1376-0971",
+        "domain": "HPEA",
+        "category": 3
+    },
+    {
+        "name": "Business and Economic History",
+        "issn": "0849-6825",
+        "domain": "HPEA",
+        "category": 4
+    },
+    {
+        "name": "Entreprises et Histoire",
+        "issn": "1161-2770",
+        "domain": "HPEA",
+        "category": 4
+    },
+    {
+        "name": "Histoire Économie et Société",
+        "issn": "0752-5702",
+        "domain": "HPEA",
+        "category": 4
+    },
+    {
+        "name": "Histoire Économique Quantitative (E&S, série AF) †",
+        "issn": "0013-0567",
+        "domain": "HPEA",
+        "category": 4
+    },
+    {
+        "name": "History of Economics Review",
+        "issn": "1037-0196",
+        "domain": "HPEA",
+        "category": 4
+    },
+    {
+        "name": "Journal of European Economic History",
+        "issn": "0391-5115",
+        "domain": "HPEA",
+        "category": 4
+    },
+    {
+        "name": "Journal of Historical Research in Marketing",
+        "issn": "1755-750X",
+        "domain": "HPEA",
+        "category": 4
+    },
+    {
+        "name": "Labor History",
+        "issn": "0023-656X",
+        "domain": "HPEA",
+        "category": 4
+    },
+    {
+        "name": "Management and Organizational History",
+        "issn": "1744-9359",
+        "domain": "HPEA",
+        "category": 4
+    },
+    {
+        "name": "Research in Economic History",
+        "issn": "1054-1098",
+        "domain": "HPEA",
+        "category": 4
+    },
+    {
+        "name": "Research in the History of Economic Thought and Methodology",
+        "issn": "0743-4154",
+        "domain": "HPEA",
+        "category": 4
+    },
+    {
+        "name": "Revue d'Histoire de la Pensée Economique (anc. E&S, Histoire de la Pensée Economique)",
+        "issn": "2496-4646",
+        "domain": "HPEA",
+        "category": 4
+    },
+    {
+        "name": "Scandinavian Economic History Review",
+        "issn": "0358-5522",
+        "domain": "HPEA",
+        "category": 4
+    },
+        // ************ HPEA ***************
+    {
+        "name": "European Journal of Operational Research",
+        "issn": "0377-2217",
+        "domain": "RO",
+        "category": 1
+    },
+    {
+        "name": "Mathematics of Operations Research",
+        "issn": "0364-765X",
+        "domain": "RO",
+        "category": 1
+    },
+    {
+        "name": "Operations Research",
+        "issn": "0030-364X",
+        "domain": "RO",
+        "category": 1
+    },
+    {
+        "name": "Annals of Operations Research",
+        "issn": "0254-5330",
+        "domain": "RO",
+        "category": 2
+    },
+    {
+        "name": "Computers & Operations Research",
+        "issn": "0305-0548",
+        "domain": "RO",
+        "category": 2
+    },
+    {
+        "name": "Decision Sciences",
+        "issn": "0011-7315",
+        "domain": "RO",
+        "category": 2
+    },
+    {
+        "name": "Journal of the Operational Research Society",
+        "issn": "0160-5682",
+        "domain": "RO",
+        "category": 2
+    },
+    {
+        "name": "Omega",
+        "issn": "0305-0483",
+        "domain": "RO",
+        "category": 2
+    },
+    {
+        "name": "Operations Research Letters",
+        "issn": "0167-6377",
+        "domain": "RO",
+        "category": 2
+    },
+    {
+        "name": "4OR: A Quarterly Journal of Operations Research",
+        "issn": "1619-4500",
+        "domain": "RO",
+        "category": 3
+    },
+    {
+        "name": "Decision Analysis",
+        "issn": "1545-8490",
+        "domain": "RO",
+        "category": 3
+    },
+    {
+        "name": "Group Decision and Negotiation",
+        "issn": "0926-2644",
+        "domain": "RO",
+        "category": 3
+    },
+    {
+        "name": "International Transactions in Operational Research",
+        "issn": "0969-6016",
+        "domain": "RO",
+        "category": 3
+    },
+    {
+        "name": "Journal of Productivity Analysis",
+        "issn": "0895-562X",
+        "domain": "RO",
+        "category": 3
+    },
+    {
+        "name": "Journal of Scheduling",
+        "issn": "1094-6136",
+        "domain": "RO",
+        "category": 3
+    },
+    {
+        "name": "Mathematical Methods of Operations Research",
+        "issn": "1432-2994",
+        "domain": "RO",
+        "category": 3
+    },
+    {
+        "name": "Naval Research Logistics",
+        "issn": "0894-069X",
+        "domain": "RO",
+        "category": 3
+    },
+    {
+        "name": "Networks",
+        "issn": "0028-3045",
+        "domain": "RO",
+        "category": 3
+    },
+    {
+        "name": "OR Spectrum",
+        "issn": "0171-6468",
+        "domain": "RO",
+        "category": 3
+    },
+    {
+        "name": "RAIRO",
+        "issn": "0399-0559",
+        "domain": "RO",
+        "category": 3
+    },
+    {
+        "name": "TOP: An Official Journal of the Spanish Society of Statistics and Operations Research",
+        "issn": "1134-5764",
+        "domain": "RO",
+        "category": 4
+    },
+    {
+        "name": "Asia Pacific Journal of Operations Research",
+        "issn": "0217-5959",
+        "domain": "RO",
+        "category": 4
+    },
+    {
+        "name": "Central European Journal of Operations Research",
+        "issn": "1435-246X",
+        "domain": "RO",
+        "category": 4
+    },
+    {
+        "name": "INFOR",
+        "issn": "0315-5986",
+        "domain": "RO",
+        "category": 4
+    },
+    {
+        "name": "Journal of Multi-Criteria Decision Analysis",
+        "issn": "1057-9214",
+        "domain": "RO",
+        "category": 4
+    },
+    // ************ SANT ***************
+    {
+        "name": "Health Economics",
+        "issn": "1057-9230",
+        "domain": "SANT",
+        "category": 1
+    },
+    {
+        "name": "Journal of Health Economics",
+        "issn": "0167-6296",
+        "domain": "SANT",
+        "category": 1
+    },
+    {
+        "name": "Medical Care",
+        "issn": "0025-7079",
+        "domain": "SANT",
+        "category": 1
+    },
+    {
+        "name": "Social Science and Medicine",
+        "issn": "0277-9536",
+        "domain": "SANT",
+        "category": 1
+    },
+    {
+        "name": "Economics & Human Biology",
+        "issn": "1570-677X",
+        "domain": "SANT",
+        "category": 2
+    },
+    {
+        "name": "European Journal of Health Economics",
+        "issn": "1618-7598",
+        "domain": "SANT",
+        "category": 2
+    },
+    {
+        "name": "Health Policy",
+        "issn": "0168-8510",
+        "domain": "SANT",
+        "category": 2
+    },
+    {
+        "name": "Health Services Research",
+        "issn": "0017-9124",
+        "domain": "SANT",
+        "category": 2
+    },
+    {
+        "name": "International Journal of Health Economics and Management",
+        "issn": "2199-9023",
+        "domain": "SANT",
+        "category": 2
+    },
+    {
+        "name": "Medical Decision Making",
+        "issn": "0272-989X",
+        "domain": "SANT",
+        "category": 2
+    },
+    {
+        "name": "Pharmacoeconomics",
+        "issn": "1170-7690",
+        "domain": "SANT",
+        "category": 2
+    },
+    {
+        "name": "The Milbank Quarterly",
+        "issn": "0887-378X",
+        "domain": "SANT",
+        "category": 2
+    },
+    {
+        "name": "Value in Health",
+        "issn": "1098-3015",
+        "domain": "SANT",
+        "category": 2
+    },
+    {
+        "name": "American Journal of Health Economics",
+        "issn": "2332-3493",
+        "domain": "SANT",
+        "category": 3
+    },
+    {
+        "name": "American Journal of Medical Quality",
+        "issn": "1062-8606",
+        "domain": "SANT",
+        "category": 3
+    },
+    {
+        "name": "Applied Health Economics and Policy",
+        "issn": "1175-5652",
+        "domain": "SANT",
+        "category": 3
+    },
+    {
+        "name": "BMC Health Services Research",
+        "issn": "1472-6963",
+        "domain": "SANT",
+        "category": 3
+    },
+    {
+        "name": "Bulletin of the World Health Organization",
+        "issn": "0042-9686",
+        "domain": "SANT",
+        "category": 3
+    },
+    {
+        "name": "European Journal of Public Health",
+        "issn": "1101-1262",
+        "domain": "SANT",
+        "category": 3
+    },
+    {
+        "name": "Health Care Financing Review",
+        "issn": "0195-8631",
+        "domain": "SANT",
+        "category": 3
+    },
+    {
+        "name": "Health Care Management Review",
+        "issn": "0361-6274",
+        "domain": "SANT",
+        "category": 3
+    },
+    {
+        "name": "Health Economics Policy and Law",
+        "issn": "1744-1331",
+        "domain": "SANT",
+        "category": 3
+    },
+    {
+        "name": "Journal of Health Politics, Policy and Law",
+        "issn": "0361-6878",
+        "domain": "SANT",
+        "category": 3
+    },
+    {
+        "name": "Medical Care Research and Review",
+        "issn": "1077-5587",
+        "domain": "SANT",
+        "category": 3
+    },
+    {
+        "name": "Public Health",
+        "issn": "0033-3506",
+        "domain": "SANT",
+        "category": 3
+    },
+    {
+        "name": "Quality of Life Research",
+        "issn": "0962-9343",
+        "domain": "SANT",
+        "category": 3
+    },
+    {
+        "name": "The International Journal of Technology Assessment in Health",
+        "issn": "0266-4623",
+        "domain": "SANT",
+        "category": 3
+    },
+    {
+        "name": "Health Care Management Science",
+        "issn": "1386-9620",
+        "domain": "SANT",
+        "category": 4
+    },
+    {
+        "name": "Health Economics Review",
+        "issn": "2191-1991",
+        "domain": "SANT",
+        "category": 4
+    },
+    {
+        "name": "Health Policy and Planning",
+        "issn": "0268-1080",
+        "domain": "SANT",
+        "category": 4
+    },
+    {
+        "name": "Health Services Management Research",
+        "issn": "0951-4848",
+        "domain": "SANT",
+        "category": 4
+    },
+    {
+        "name": "International Journal of Health Planning and Management",
+        "issn": "0749-6753",
+        "domain": "SANT",
+        "category": 4
+    },
+    {
+        "name": "International Journal of Quality in Health Care",
+        "issn": "1353-4505",
+        "domain": "SANT",
+        "category": 4
+    },
+    {
+        "name": "Journal de Gestion et d’Économie Médicales",
+        "issn": "0294-0736",
+        "domain": "SANT",
+        "category": 4
+    },
+    {
+        "name": "Journal of Health Services Research and Policy",
+        "issn": "1355-8196",
+        "domain": "SANT",
+        "category": 4
+    },
+    {
+        "name": "Journal of Medical Economics",
+        "issn": "1369-6998",
+        "domain": "SANT",
+        "category": 4
+    },
+    {
+        "name": "Journal of the Economics of Ageing",
+        "issn": "2212-828X",
+        "domain": "SANT",
+        "category": 4
+    },
+    {
+        "name": "Sciences Sociales et Santé",
+        "issn": "0294-0337",
+        "domain": "SANT",
+        "category": 4
+    },
+    // ************ Spatiale ***************
+    {
+        "name": "Economic Geography",
+        "issn": "0013-0095",
+        "domain": "Spatiale",
+        "category": 1
+    },
+    {
+        "name": "Journal of Economic Geography",
+        "issn": "1468-2702",
+        "domain": "Spatiale",
+        "category": 1
+    },
+    {
+        "name": "Journal of Urban Economics",
+        "issn": "0094-1190",
+        "domain": "Spatiale",
+        "category": 1
+    },
+    {
+        "name": "Annals of Regional Science",
+        "issn": "0570-1864",
+        "domain": "Spatiale",
+        "category": 2
+    },
+    {
+        "name": "Economic Development Quarterly",
+        "issn": "0891-2424",
+        "domain": "Spatiale",
+        "category": 2
+    },
+    {
+        "name": "Environment and Planning (A)",
+        "issn": "0308-518X",
+        "domain": "Spatiale",
+        "category": 2
+    },
+    {
+        "name": "International Regional Science Review",
+        "issn": "0160-0176",
+        "domain": "Spatiale",
+        "category": 2
+    },
+    {
+        "name": "Journal of Housing Economics",
+        "issn": "1051-1377",
+        "domain": "Spatiale",
+        "category": 2
+    },
+    {
+        "name": "Journal of Regional Science",
+        "issn": "0022-4146",
+        "domain": "Spatiale",
+        "category": 2
+    },
+    {
+        "name": "Land Economics",
+        "issn": "0023-7639",
+        "domain": "Spatiale",
+        "category": 2
+    },
+    {
+        "name": "Papers in Regional Science",
+        "issn": "1056-8190",
+        "domain": "Spatiale",
+        "category": 2
+    },
+    {
+        "name": "Regional Science and Urban Economics",
+        "issn": "0166-0462",
+        "domain": "Spatiale",
+        "category": 2
+    },
+    {
+        "name": "Regional Studies",
+        "issn": "0034-3404",
+        "domain": "Spatiale",
+        "category": 2
+    },
+    {
+        "name": "Tourism Management",
+        "issn": "0261-5177",
+        "domain": "Spatiale",
+        "category": 2
+    },
+    {
+        "name": "Transportation Research A",
+        "issn": "0965-8564",
+        "domain": "Spatiale",
+        "category": 2
+    },
+    {
+        "name": "Transportation Research B",
+        "issn": "0191-2615",
+        "domain": "Spatiale",
+        "category": 2
+    },
+    {
+        "name": "Transportation Science",
+        "issn": "0041-1655",
+        "domain": "Spatiale",
+        "category": 2
+    },
+    {
+        "name": "Urban Studies",
+        "issn": "0042-0980",
+        "domain": "Spatiale",
+        "category": 2
+    },
+    {
+        "name": "Annals of Tourism Research",
+        "issn": "0160-7383",
+        "domain": "Spatiale",
+        "category": 3
+    },
+    {
+        "name": "Growth and Change",
+        "issn": "0017-4815",
+        "domain": "Spatiale",
+        "category": 3
+    },
+    {
+        "name": "Housing Studies",
+        "issn": "0267-3037",
+        "domain": "Spatiale",
+        "category": 3
+    },
+    {
+        "name": "International Journal of Contemporary Hospitality Management",
+        "issn": "0959-6119",
+        "domain": "Spatiale",
+        "category": 3
+    },
+    {
+        "name": "International Journal of Urban and Regional Research",
+        "issn": "0309-1317",
+        "domain": "Spatiale",
+        "category": 3
+    },
+    {
+        "name": "Journal of Transport Economics and Policy",
+        "issn": "0022-5258",
+        "domain": "Spatiale",
+        "category": 3
+    },
+    {
+        "name": "Real Estate Economics",
+        "issn": "1080-8620",
+        "domain": "Spatiale",
+        "category": 3
+    },
+    {
+        "name": "Revue d'Économie Régionale et Urbaine",
+        "issn": "0180-7307",
+        "domain": "Spatiale",
+        "category": 3
+    },
+    {
+        "name": "Spatial Economic Analysis",
+        "issn": "1742-1772",
+        "domain": "Spatiale",
+        "category": 3
+    },
+    {
+        "name": "Transport Policy",
+        "issn": "0967-070X",
+        "domain": "Spatiale",
+        "category": 3
+    },
+    {
+        "name": "Transport Reviews",
+        "issn": "0144-1647",
+        "domain": "Spatiale",
+        "category": 3
+    },
+    {
+        "name": "Transportation Research D",
+        "issn": "1361-9209",
+        "domain": "Spatiale",
+        "category": 3
+    },
+    {
+        "name": "Cahiers Scientifiques du Transport",
+        "issn": "1150-8809",
+        "domain": "Spatiale",
+        "category": 4
+    },
+    {
+        "name": "Canadian Journal of Regional Science / Revue canadienne des sciences régionales",
+        "issn": "0705-4580",
+        "domain": "Spatiale",
+        "category": 4
+    },
+    {
+        "name": "Économie Rurale",
+        "issn": "0013-0559",
+        "domain": "Spatiale",
+        "category": 4
+    },
+    {
+        "name": "Géographie Économie Société",
+        "issn": "1295-926X",
+        "domain": "Spatiale",
+        "category": 4
+    },
+    {
+        "name": "International Journal of Transport Economics",
+        "issn": "0391-8440",
+        "domain": "Spatiale",
+        "category": 4
+    },
+    {
+        "name": "Journal of Travel Research",
+        "issn": "0047-2875",
+        "domain": "Spatiale",
+        "category": 4
+    },
+    {
+        "name": "Région et Développement",
+        "issn": "1267-5059",
+        "domain": "Spatiale",
+        "category": 4
+    },
+    {
+        "name": "Tourism Economics",
+        "issn": "1354-8166",
+        "domain": "Spatiale",
+        "category": 4
     }
 ]
 
