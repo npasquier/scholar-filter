@@ -1,27 +1,36 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import LottieRegister from '../animation/LottieRegister';
 import { useForm, SubmitHandler } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
-import LottiePassword from '../animation/LottiePassword';
 import schema from '@/lib/schema';
 import axios from 'axios';
 import Image from 'next/image';
-import LottieSuccess from '../animation/LottieSuccess';
-import { useRouter } from 'next/navigation';
+import dynamic from 'next/dynamic';
 
 type FormData = {
   email: string;
   password: string;
 };
 
+
+const LottieRegister = dynamic(() => import('../animation/LottieRegister'), {
+  ssr: false,
+});
+const LottiePassword = dynamic(() => import('../animation/LottiePassword'), {
+  ssr: false,
+});
+const LottieSuccess = dynamic(() => import('../animation/LottieSuccess'), {
+  ssr: false,
+});
+
 const RegisterForm = () => {
   const [loaded, setLoaded] = useState(false);
 
-  setTimeout(() => {
-    setLoaded(true);
-  }, 3000);
+  useEffect(() => {
+  const timer = setTimeout(() => setLoaded(true), 3000);
+  return () => clearTimeout(timer);
+}, []);
 
   const [showPassword, setShowPassword] = useState(false);
 
@@ -239,7 +248,7 @@ const RegisterForm = () => {
               type = 'button'
               className='elm-bg-color text-slate-100 py-2 px-4 font-semibold rounded-lg shadow-xl hover:bg-slate-200 hover:text-slate-900 focus:outline-none focus:ring-2 focus:ring-slate-300 focus:ring-opacity-75 max-md:mt-2'
             >
-              <div>Feature not yet opened.</div>
+              <div>APOLOGIES ! This feature has been disabled for cost reason... 💸</div>
             </button>
           </form>
         </div>
