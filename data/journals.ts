@@ -3312,6 +3312,1766 @@ const journals =  [
         "issn": "1354-8166",
         "domain": "Spatiale",
         "category": 4
+    },
+    // ************ CPT ***************
+    {
+        "name": "Journal of Accounting and Economics",
+        "issn": "0165-4101",
+        "domain": "CPT",
+        "category": 1
+    },
+    {
+        "name": "Accounting, Organization and Society",
+        "issn": "0361-3682",
+        "domain": "CPT",
+        "category": 1
+    },
+    {
+        "name": "Journal of Accounting Research",
+        "issn": "0021-8456",
+        "domain": "CPT",
+        "category": 1
+    },
+    {
+        "name": "Management Accounting Research",
+        "issn": "1044-5005",
+        "domain": "CPT",
+        "category": 1
+    },
+    {
+        "name": "The Accounting Review",
+        "issn": "0001-4826",
+        "domain": "CPT",
+        "category": 1
+    },
+    {
+        "name": "Accounting, Auditing & Accountability Journal",
+        "issn": "0951-3574",
+        "domain": "CPT",
+        "category": 2
+    },
+    {
+        "name": "Auditing, A Journal of Practice and Theory",
+        "issn": "0278-0380",
+        "domain": "CPT",
+        "category": 2
+    },
+    {
+        "name": "Comptabilité Contrôle Audit",
+        "issn": "1262-2788",
+        "domain": "CPT",
+        "category": 2
+    },
+    {
+        "name": "Contemporary Accounting Research",
+        "issn": "0823-9150",
+        "domain": "CPT",
+        "category": 2
+    },
+    {
+        "name": "Critical Perspectives on Accounting",
+        "issn": "1045-2354",
+        "domain": "CPT",
+        "category": 2
+    },
+    {
+        "name": "European Accounting Review",
+        "issn": "0963-8180",
+        "domain": "CPT",
+        "category": 2
+    },
+    {
+        "name": "Journal of Accounting and Public Policy",
+        "issn": "0278-4254",
+        "domain": "CPT",
+        "category": 2
+    },
+    {
+        "name": "Journal of Business Finance and Accounting",
+        "issn": "0306-686X",
+        "domain": "CPT",
+        "category": 2
+    },
+    {
+        "name": "Review of Accounting Studies",
+        "issn": "1380-6653",
+        "domain": "CPT",
+        "category": 2
+    },
+    {
+        "name": "Abacus",
+        "issn": "0001-3072",
+        "domain": "CPT",
+        "category": 3
+    },
+    {
+        "name": "Accounting and Business Research",
+        "issn": "0001-4788",
+        "domain": "CPT",
+        "category": 3
+    },
+    {
+        "name": "Accounting and Finance",
+        "issn": "0810-5391",
+        "domain": "CPT",
+        "category": 3
+    },
+    {
+        "name": "Accounting Horizons",
+        "issn": "0888-7993",
+        "domain": "CPT",
+        "category": 3
+    },
+    {
+        "name": "Behavioral Research in Accounting",
+        "issn": "1050-4753",
+        "domain": "CPT",
+        "category": 3
+    },
+    {
+        "name": "British Accounting Review",
+        "issn": "0890-8389",
+        "domain": "CPT",
+        "category": 3
+    },
+    {
+        "name": "Financial Accountability and Management",
+        "issn": "0267-4424",
+        "domain": "CPT",
+        "category": 3
+    },
+    {
+        "name": "International Journal of Accounting",
+        "issn": "0020-7063",
+        "domain": "CPT",
+        "category": 3
+    },
+    {
+        "name": "International Journal of Auditing",
+        "issn": "1090-6738",
+        "domain": "CPT",
+        "category": 3
+    },
+    {
+        "name": "Journal of Accounting Literature",
+        "issn": "0737-4607",
+        "domain": "CPT",
+        "category": 3
+    },
+    {
+        "name": "Journal of Accounting, Auditing and Finance",
+        "issn": "0148-558X",
+        "domain": "CPT",
+        "category": 3
+    },
+    {
+        "name": "Journal of Applied Accounting Research",
+        "issn": "0967-5426",
+        "domain": "CPT",
+        "category": 3
+    },
+    {
+        "name": "Journal of International Accounting Research",
+        "issn": "1542-6297",
+        "domain": "CPT",
+        "category": 3
+    },
+    {
+        "name": "Journal of Management Accounting Research",
+        "issn": "1049-2127",
+        "domain": "CPT",
+        "category": 3
+    },
+    {
+        "name": "Sustainability Accounting, Management and Policy Journal",
+        "issn": "2040-8021",
+        "domain": "CPT",
+        "category": 3
+    },
+    {
+        "name": "Accounting Forum",
+        "issn": "0155-9982",
+        "domain": "CPT",
+        "category": 4
+    },
+    {
+        "name": "Advances in Accounting",
+        "issn": "0897-3660",
+        "domain": "CPT",
+        "category": 4
+    },
+    {
+        "name": "Management Accounting Quarterly",
+        "issn": "1528-5359",
+        "domain": "CPT",
+        "category": 4
+    },
+    {
+        "name": "Managerial Auditing Journal",
+        "issn": "0268-6902",
+        "domain": "CPT",
+        "category": 4
+    },
+    {
+        "name": "Qualitative Research in Accounting & Management",
+        "issn": "1176-6093",
+        "domain": "CPT",
+        "category": 4
+    },
+    {
+        "name": "Review of Accounting and Finance",
+        "issn": "1475-7702",
+        "domain": "CPT",
+        "category": 4
+    },
+    {
+        "name": "Social and Environmental Accountability Journal",
+        "issn": "0969-160X",
+        "domain": "CPT",
+        "category": 4
+    },
+        // ************ DevTrans ***************
+    {
+        "name": "Economic Development and Cultural Change",
+        "issn": "0013-0079",
+        "domain": "DevTrans",
+        "category": 1
+    },
+    {
+        "name": "Journal of Comparative Economics",
+        "issn": "0147-5967",
+        "domain": "DevTrans",
+        "category": 1
+    },
+    {
+        "name": "Journal of Development Economics",
+        "issn": "0304-3878",
+        "domain": "DevTrans",
+        "category": 1
+    },
+    {
+        "name": "World Bank Economic Review",
+        "issn": "0258-6770",
+        "domain": "DevTrans",
+        "category": 1
+    },
+    {
+        "name": "World Development",
+        "issn": "0305-750X",
+        "domain": "DevTrans",
+        "category": 1
+    },
+    {
+        "name": "China Economic Review",
+        "issn": "1043-951X",
+        "domain": "DevTrans",
+        "category": 2
+    },
+    {
+        "name": "Development and Change",
+        "issn": "0012-155X",
+        "domain": "DevTrans",
+        "category": 2
+    },
+    {
+        "name": "Economics of Transition",
+        "issn": "0967-0750",
+        "domain": "DevTrans",
+        "category": 2
+    },
+    {
+        "name": "Journal of Development Studies",
+        "issn": "0022-0388",
+        "domain": "DevTrans",
+        "category": 2
+    },
+    {
+        "name": "Population and Development Review",
+        "issn": "0098-7921",
+        "domain": "DevTrans",
+        "category": 2
+    },
+    {
+        "name": "Post-Communist Economies",
+        "issn": "1463-1377",
+        "domain": "DevTrans",
+        "category": 2
+    },
+    {
+        "name": "Comparative Economic Studies",
+        "issn": "0888-7233",
+        "domain": "DevTrans",
+        "category": 3
+    },
+    {
+        "name": "Economic Systems",
+        "issn": "0939-3625",
+        "domain": "DevTrans",
+        "category": 3
+    },
+    {
+        "name": "Emerging Markets Review",
+        "issn": "1566-0141",
+        "domain": "DevTrans",
+        "category": 3
+    },
+    {
+        "name": "European Journal of Comparative Economics",
+        "issn": "1824-2979",
+        "domain": "DevTrans",
+        "category": 3
+    },
+    {
+        "name": "Europe-Asia Studies",
+        "issn": "0966-8136",
+        "domain": "DevTrans",
+        "category": 3
+    },
+    {
+        "name": "Journal of African Economies",
+        "issn": "0963-8024",
+        "domain": "DevTrans",
+        "category": 3
+    },
+    {
+        "name": "Journal of International Development",
+        "issn": "0954-1748",
+        "domain": "DevTrans",
+        "category": 3
+    },
+    {
+        "name": "Journal of International Trade and Economic Development",
+        "issn": "0963-8199",
+        "domain": "DevTrans",
+        "category": 3
+    },
+    {
+        "name": "Oxford Development Studies",
+        "issn": "1360-0818",
+        "domain": "DevTrans",
+        "category": 3
+    },
+    {
+        "name": "Revue d'Économie du Développement",
+        "issn": "1245-4060",
+        "domain": "DevTrans",
+        "category": 3
+    },
+    {
+        "name": "Third World Quarterly",
+        "issn": "0143-6597",
+        "domain": "DevTrans",
+        "category": 3
+    },
+    {
+        "name": "African Development Review",
+        "issn": "1017-6772",
+        "domain": "DevTrans",
+        "category": 4
+    },
+    {
+        "name": "Asian Development Review",
+        "issn": "0116-1105",
+        "domain": "DevTrans",
+        "category": 4
+    },
+    {
+        "name": "Baltic Journal of Economics",
+        "issn": "1406-099X",
+        "domain": "DevTrans",
+        "category": 4
+    },
+    {
+        "name": "Cepal Review",
+        "issn": "0251-2920",
+        "domain": "DevTrans",
+        "category": 4
+    },
+    {
+        "name": "Economic Change and Restructuring",
+        "issn": "1573-9414",
+        "domain": "DevTrans",
+        "category": 4
+    },
+    {
+        "name": "Economic History of Developing Regions",
+        "issn": "2078-0389",
+        "domain": "DevTrans",
+        "category": 4
+    },
+    {
+        "name": "European Journal of Development Research",
+        "issn": "0957-8811",
+        "domain": "DevTrans",
+        "category": 4
+    },
+    {
+        "name": "Journal of Asian Economics",
+        "issn": "1049-0078",
+        "domain": "DevTrans",
+        "category": 4
+    },
+    {
+        "name": "Mondes en Développement",
+        "issn": "0302-3052",
+        "domain": "DevTrans",
+        "category": 4
+    },
+    {
+        "name": "Review of African Political Economy",
+        "issn": "0305-6244",
+        "domain": "DevTrans",
+        "category": 4
+    },
+    {
+        "name": "Review of Development Economics",
+        "issn": "1363-6669",
+        "domain": "DevTrans",
+        "category": 4
+    },
+    {
+        "name": "Revue Canadienne d’Études du Développement / Canadian Journal of Development Studies",
+        "issn": "0225-5189",
+        "domain": "DevTrans",
+        "category": 4
+    },
+     // ************ Fin ***************
+    {
+        "name": "Journal of Finance",
+        "issn": "0022-1082",
+        "domain": "Fin",
+        "category": 1
+    },
+    {
+        "name": "Journal of Financial and Quantitative Analysis",
+        "issn": "0022-1090",
+        "domain": "Fin",
+        "category": 1
+    },
+    {
+        "name": "Journal of Financial Economics",
+        "issn": "0304-405X",
+        "domain": "Fin",
+        "category": 1
+    },
+    {
+        "name": "Review of Finance",
+        "issn": "1572-3097",
+        "domain": "Fin",
+        "category": 1
+    },
+    {
+        "name": "Review of Financial Studies",
+        "issn": "0893-9454",
+        "domain": "Fin",
+        "category": 1
+    },
+    {
+        "name": "Finance",
+        "issn": "0752-6180",
+        "domain": "Fin",
+        "category": 2
+    },
+    {
+        "name": "Financial Management",
+        "issn": "0046-3892",
+        "domain": "Fin",
+        "category": 2
+    },
+    {
+        "name": "Geneva Risk and Insurance Review",
+        "issn": "1554-964X",
+        "domain": "Fin",
+        "category": 2
+    },
+    {
+        "name": "Journal of Banking and Finance",
+        "issn": "0378-4266",
+        "domain": "Fin",
+        "category": 2
+    },
+    {
+        "name": "Journal of Corporate Finance",
+        "issn": "0929-1199",
+        "domain": "Fin",
+        "category": 2
+    },
+    {
+        "name": "Journal of Financial Intermediation",
+        "issn": "1042-9573",
+        "domain": "Fin",
+        "category": 2
+    },
+    {
+        "name": "Journal of Financial Markets",
+        "issn": "1386-4181",
+        "domain": "Fin",
+        "category": 2
+    },
+    {
+        "name": "Journal of Risk and Insurance",
+        "issn": "0022-4367",
+        "domain": "Fin",
+        "category": 2
+    },
+    {
+        "name": "Journal of Risk and Uncertainty",
+        "issn": "0895-5646",
+        "domain": "Fin",
+        "category": 2
+    },
+    {
+        "name": "Mathematical Finance",
+        "issn": "0960-1627",
+        "domain": "Fin",
+        "category": 2
+    },
+    {
+        "name": "ASTIN Bulletin",
+        "issn": "0515-0361",
+        "domain": "Fin",
+        "category": 3
+    },
+    {
+        "name": "Corporate Governance: An International Review",
+        "issn": "0964-8410",
+        "domain": "Fin",
+        "category": 3
+    },
+    {
+        "name": "European Financial Management",
+        "issn": "1354-7798",
+        "domain": "Fin",
+        "category": 3
+    },
+    {
+        "name": "Finance and Stochastics",
+        "issn": "0949-2984",
+        "domain": "Fin",
+        "category": 3
+    },
+    {
+        "name": "Finance Research Letters",
+        "issn": "1544-6123",
+        "domain": "Fin",
+        "category": 3
+    },
+    {
+        "name": "Financial Markets, Institutions & Instruments",
+        "issn": "0963-8008",
+        "domain": "Fin",
+        "category": 3
+    },
+    {
+        "name": "Geneva Papers on Risk and Insurance - Issues and Practices",
+        "issn": "1018-5895",
+        "domain": "Fin",
+        "category": 3
+    },
+    {
+        "name": "Insurance: Mathematics and Economics",
+        "issn": "0167-6687",
+        "domain": "Fin",
+        "category": 3
+    },
+    {
+        "name": "International Journal of Theoretical and Applied Finance",
+        "issn": "0219-0249",
+        "domain": "Fin",
+        "category": 3
+    },
+    {
+        "name": "International Review of Financial Analysis",
+        "issn": "1057-5219",
+        "domain": "Fin",
+        "category": 3
+    },
+    {
+        "name": "Journal of Derivatives",
+        "issn": "1074-1240",
+        "domain": "Fin",
+        "category": 3
+    },
+    {
+        "name": "Journal of Empirical Finance",
+        "issn": "0927-5398",
+        "domain": "Fin",
+        "category": 3
+    },
+    {
+        "name": "Journal of Financial Research",
+        "issn": "0270-2592",
+        "domain": "Fin",
+        "category": 3
+    },
+    {
+        "name": "Journal of Financial Services Research",
+        "issn": "0920-8550",
+        "domain": "Fin",
+        "category": 3
+    },
+    {
+        "name": "Journal of Financial Stability",
+        "issn": "1572-3089",
+        "domain": "Fin",
+        "category": 3
+    },
+    {
+        "name": "Journal of Fixed Income",
+        "issn": "1059-8596",
+        "domain": "Fin",
+        "category": 3
+    },
+    {
+        "name": "Journal of Futures Markets",
+        "issn": "0270-7314",
+        "domain": "Fin",
+        "category": 3
+    },
+    {
+        "name": "Journal of Portfolio Management",
+        "issn": "0095-4918",
+        "domain": "Fin",
+        "category": 3
+    },
+    {
+        "name": "Journal of Real Estate Finance and Economics",
+        "issn": "0895-5638",
+        "domain": "Fin",
+        "category": 3
+    },
+    {
+        "name": "Quantitative Finance",
+        "issn": "1469-7688",
+        "domain": "Fin",
+        "category": 3
+    },
+    {
+        "name": "Quarterly Review of Economics and Finance",
+        "issn": "1062-9769",
+        "domain": "Fin",
+        "category": 3
+    },
+    {
+        "name": "Annals of Finance",
+        "issn": "1614-2446",
+        "domain": "Fin",
+        "category": 4
+    },
+    {
+        "name": "Applied Financial Economics",
+        "issn": "0960-3107",
+        "domain": "Fin",
+        "category": 4
+    },
+    {
+        "name": "Bankers, Markets & Investors (ex-Banque & Marchés)",
+        "issn": "2101-9304",
+        "domain": "Fin",
+        "category": 4
+    },
+    {
+        "name": "Bulletin Français d'Actuariat",
+        "issn": "1779-7160",
+        "domain": "Fin",
+        "category": 4
+    },
+    {
+        "name": "Financial Review",
+        "issn": "0732-8516",
+        "domain": "Fin",
+        "category": 4
+    },
+    {
+        "name": "International Journal of Islamic and Middle Eastern Finance and Management",
+        "issn": "1753-8394",
+        "domain": "Fin",
+        "category": 4
+    },
+    {
+        "name": "Journal of Asset Management",
+        "issn": "1470-8272",
+        "domain": "Fin",
+        "category": 4
+    },
+    {
+        "name": "Journal of Multinational Financial Management",
+        "issn": "1042-444X",
+        "domain": "Fin",
+        "category": 4
+    },
+    {
+        "name": "Journal of Risk Finance",
+        "issn": "1526-5943",
+        "domain": "Fin",
+        "category": 4
+    },
+    {
+        "name": "Managerial Finance",
+        "issn": "0307-4358",
+        "domain": "Fin",
+        "category": 4
+    },
+    {
+        "name": "Mathematics and Financial Economics",
+        "issn": "1862-9679",
+        "domain": "Fin",
+        "category": 4
+    },
+    {
+        "name": "Multinational Finance Journal",
+        "issn": "1096-1879",
+        "domain": "Fin",
+        "category": 4
+    },
+    {
+        "name": "North American Actuarial Journal",
+        "issn": "1092-0277",
+        "domain": "Fin",
+        "category": 4
+    },
+    {
+        "name": "Pacific Basin Finance Journal",
+        "issn": "0927-538X",
+        "domain": "Fin",
+        "category": 4
+    },
+    {
+        "name": "Research in International Business and Finance",
+        "issn": "0275-5319",
+        "domain": "Fin",
+        "category": 4
+    },
+    {
+        "name": "Review of Derivatives Research",
+        "issn": "1380-6645",
+        "domain": "Fin",
+        "category": 4
+    },
+    {
+        "name": "Review of Financial Economics",
+        "issn": "1058-3300",
+        "domain": "Fin",
+        "category": 4
+    },
+    {
+        "name": "Review of Quantitative Finance and Accounting",
+        "issn": "0924-865X",
+        "domain": "Fin",
+        "category": 4
+    },
+    {
+        "name": "Revue d'Économie Financière",
+        "issn": "1777-5744",
+        "domain": "Fin",
+        "category": 4
+    },
+    {
+        "name": "The European Journal of Finance",
+        "issn": "1351-847X",
+        "domain": "Fin",
+        "category": 4
+    },
+    // ************ GRH ***************
+    {
+        "name": "Industrial Relations",
+        "issn": "0019-8676",
+        "domain": "GRH",
+        "category": 1
+    },
+    {
+        "name": "Journal of Applied Psychology",
+        "issn": "0021-9010",
+        "domain": "GRH",
+        "category": 1
+    },
+    {
+        "name": "Organizational Behavior and Human Decision Processes",
+        "issn": "0749-5978",
+        "domain": "GRH",
+        "category": 1
+    },
+    {
+        "name": "Personnel Psychology",
+        "issn": "0031-5826",
+        "domain": "GRH",
+        "category": 1
+    },
+    {
+        "name": "British Journal of Industrial Relations",
+        "issn": "0007-1080",
+        "domain": "GRH",
+        "category": 2
+    },
+    {
+        "name": "Business Ethics Quarterly",
+        "issn": "1052-150X",
+        "domain": "GRH",
+        "category": 2
+    },
+    {
+        "name": "Human Relations",
+        "issn": "0018-7267",
+        "domain": "GRH",
+        "category": 2
+    },
+    {
+        "name": "Human Resource Management",
+        "issn": "0090-4848",
+        "domain": "GRH",
+        "category": 2
+    },
+    {
+        "name": "Journal of Business Ethics",
+        "issn": "0167-4544",
+        "domain": "GRH",
+        "category": 2
+    },
+    {
+        "name": "Journal of Occupational and Organizational Psychology",
+        "issn": "0963-1798",
+        "domain": "GRH",
+        "category": 2
+    },
+    {
+        "name": "Journal of Organizational Behavior",
+        "issn": "0894-3796",
+        "domain": "GRH",
+        "category": 2
+    },
+    {
+        "name": "Journal of Vocational Behavior",
+        "issn": "0001-8791",
+        "domain": "GRH",
+        "category": 2
+    },
+    {
+        "name": "Leadership Quarterly",
+        "issn": "1048-9843",
+        "domain": "GRH",
+        "category": 2
+    },
+    {
+        "name": "Revue de Gestion des Ressources Humaines",
+        "issn": "1163-913X",
+        "domain": "GRH",
+        "category": 2
+    },
+    {
+        "name": "Applied Psychology: An International Review",
+        "issn": "0269-994X",
+        "domain": "GRH",
+        "category": 3
+    },
+    {
+        "name": "Business Ethics: A European Review",
+        "issn": "0962-8770",
+        "domain": "GRH",
+        "category": 3
+    },
+    {
+        "name": "Economic and Industrial Democracy",
+        "issn": "0143-831X",
+        "domain": "GRH",
+        "category": 3
+    },
+    {
+        "name": "European Journal of Industrial Relations",
+        "issn": "0959-6801",
+        "domain": "GRH",
+        "category": 3
+    },
+    {
+        "name": "Group and Organization Management",
+        "issn": "1059-6011",
+        "domain": "GRH",
+        "category": 3
+    },
+    {
+        "name": "Human Resource Management Journal",
+        "issn": "0954-5395",
+        "domain": "GRH",
+        "category": 3
+    },
+    {
+        "name": "Human Resource Management Review",
+        "issn": "1053-4822",
+        "domain": "GRH",
+        "category": 3
+    },
+    {
+        "name": "International Journal of Human Resource Management",
+        "issn": "0958-5192",
+        "domain": "GRH",
+        "category": 3
+    },
+    {
+        "name": "Journal of Business and Psychology",
+        "issn": "0889-3268",
+        "domain": "GRH",
+        "category": 3
+    },
+    {
+        "name": "Personnel Review",
+        "issn": "0048-3486",
+        "domain": "GRH",
+        "category": 3
+    },
+    {
+        "name": "Relations Industrielles / Industrial Relations",
+        "issn": "0034-379X",
+        "domain": "GRH",
+        "category": 3
+    },
+    {
+        "name": "Work and Occupations",
+        "issn": "0730-8884",
+        "domain": "GRH",
+        "category": 3
+    },
+    {
+        "name": "Work and Stress",
+        "issn": "0267-8373",
+        "domain": "GRH",
+        "category": 3
+    },
+    {
+        "name": "Work Employment and Society",
+        "issn": "0950-0170",
+        "domain": "GRH",
+        "category": 3
+    },
+    {
+        "name": "Gender, Work and Organization",
+        "issn": "0968-6673",
+        "domain": "GRH",
+        "category": 3
+    },
+    {
+        "name": "Asia Pacific Journal of Human Resources",
+        "issn": "1038-4111",
+        "domain": "GRH",
+        "category": 4
+    },
+    {
+        "name": "Employee Relations",
+        "issn": "0142-5455",
+        "domain": "GRH",
+        "category": 4
+    },
+    {
+        "name": "European Journal of Work & Organizational Psychology",
+        "issn": "1359-432X",
+        "domain": "GRH",
+        "category": 4
+    },
+    {
+        "name": "Human Systems Management",
+        "issn": "0167-2533",
+        "domain": "GRH",
+        "category": 4
+    },
+    {
+        "name": "Journal of Management Development",
+        "issn": "0262-1711",
+        "domain": "GRH",
+        "category": 4
+    },
+    {
+        "name": "Journal of Managerial Psychology",
+        "issn": "0268-3946",
+        "domain": "GRH",
+        "category": 4
+    },
+    {
+        "name": "Management & Avenir",
+        "issn": "1768-5958",
+        "domain": "GRH",
+        "category": 4
+    },
+    {
+        "name": "Review of Public Personnel Administration",
+        "issn": "0734-371X",
+        "domain": "GRH",
+        "category": 4
+    },
+    // ************ LOG ***************
+    {
+        "name": "International Journal of Production Economics",
+        "issn": "0925-5273",
+        "domain": "LOG",
+        "category": 1
+    },
+    {
+        "name": "Journal of Operations Management",
+        "issn": "0272-6963",
+        "domain": "LOG",
+        "category": 1
+    },
+    {
+        "name": "Production and Operations Management",
+        "issn": "1059-1478",
+        "domain": "LOG",
+        "category": 1
+    },
+    {
+        "name": "International Journal of Operations and Production Management",
+        "issn": "0144-3577",
+        "domain": "LOG",
+        "category": 2
+    },
+    {
+        "name": "International Journal of Physical Distribution and Logistics Management",
+        "issn": "0960-0035",
+        "domain": "LOG",
+        "category": 2
+    },
+    {
+        "name": "International Journal of Production Research",
+        "issn": "0020-7543",
+        "domain": "LOG",
+        "category": 2
+    },
+    {
+        "name": "International Journal of Project Management",
+        "issn": "0263-7863",
+        "domain": "LOG",
+        "category": 2
+    },
+    {
+        "name": "Journal of Business Logistics",
+        "issn": "0735-3766",
+        "domain": "LOG",
+        "category": 2
+    },
+    {
+        "name": "Journal of Quality Technology",
+        "issn": "0022-4065",
+        "domain": "LOG",
+        "category": 2
+    },
+    {
+        "name": "Journal of Supply Chain Management",
+        "issn": "1523-2409",
+        "domain": "LOG",
+        "category": 2
+    },
+    {
+        "name": "Manufacturing and Service Operations Management",
+        "issn": "1523-4614",
+        "domain": "LOG",
+        "category": 2
+    },
+    {
+        "name": "Production Planning and Control",
+        "issn": "0953-7287",
+        "domain": "LOG",
+        "category": 2
+    },
+    {
+        "name": "Transportation Research Part E: Logistics and Transportation Review",
+        "issn": "1366-5545",
+        "domain": "LOG",
+        "category": 2
+    },
+    {
+        "name": "Computers & Industrial Engineering",
+        "issn": "0360-8352",
+        "domain": "LOG",
+        "category": 3
+    },
+    {
+        "name": "Flexible Services and Manufacturing Journal",
+        "issn": "1936-6582",
+        "domain": "LOG",
+        "category": 3
+    },
+    {
+        "name": "Industrial Management and Data Systems",
+        "issn": "0263-5577",
+        "domain": "LOG",
+        "category": 3
+    },
+    {
+        "name": "International Journal of Logistics Management",
+        "issn": "0957-4903",
+        "domain": "LOG",
+        "category": 3
+    },
+    {
+        "name": "International Journal of Logistics Research and Applications",
+        "issn": "1367-5567",
+        "domain": "LOG",
+        "category": 3
+    },
+    {
+        "name": "International Journal of Quality and Reliability Management",
+        "issn": "0265-671X",
+        "domain": "LOG",
+        "category": 3
+    },
+    {
+        "name": "Journal of Manufacturing Systems",
+        "issn": "0278-6125",
+        "domain": "LOG",
+        "category": 3
+    },
+    {
+        "name": "Journal of Purchasing and Supply Management",
+        "issn": "1478-4092",
+        "domain": "LOG",
+        "category": 3
+    },
+    {
+        "name": "Project Management Journal",
+        "issn": "8756-9728",
+        "domain": "LOG",
+        "category": 3
+    },
+    {
+        "name": "Supply Chain Management: An International Journal",
+        "issn": "1359-8546",
+        "domain": "LOG",
+        "category": 3
+    },
+    {
+        "name": "European Review of Service Economics and Management",
+        "issn": "2495-991X",
+        "domain": "LOG",
+        "category": 4
+    },
+    {
+        "name": "International Journal of Manufacturing Technology and Management",
+        "issn": "1368-2148",
+        "domain": "LOG",
+        "category": 4
+    },
+    {
+        "name": "Journal of Manufacturing Technology Management",
+        "issn": "1741-038x",
+        "domain": "LOG",
+        "category": 4
+    },
+    {
+        "name": "Quality Management Journal",
+        "issn": "1068-6967",
+        "domain": "LOG",
+        "category": 4
+    },
+    {
+        "name": "Revue Française de Gestion Industrielle †",
+        "issn": "0242-9780",
+        "domain": "LOG",
+        "category": 4
+    },
+    {
+        "name": "Supply Chain Forum: An International Journal",
+        "issn": "1625-8312",
+        "domain": "LOG",
+        "category": 4
+    },
+    {
+        "name": "The TQM Journal",
+        "issn": "1754-2731",
+        "domain": "LOG",
+        "category": 4
+    },
+    {
+        "name": "Total Quality Management & Business Excellence",
+        "issn": "1478-3363",
+        "domain": "LOG",
+        "category": 4
+    },
+    // ************ MgPub ***************
+    {
+        "name": "Journal of Public Administration Research and Theory",
+        "issn": "1053-1858",
+        "domain": "MgPub",
+        "category": 1
+    },
+    {
+        "name": "Public Administration Review",
+        "issn": "0033-3352",
+        "domain": "MgPub",
+        "category": 1
+    },
+    {
+        "name": "Administration and Society",
+        "issn": "0095-3997",
+        "domain": "MgPub",
+        "category": 2
+    },
+    {
+        "name": "Policy and Politics",
+        "issn": "0305-5736",
+        "domain": "MgPub",
+        "category": 2
+    },
+    {
+        "name": "Public Management Review",
+        "issn": "1471-9037",
+        "domain": "MgPub",
+        "category": 2
+    },
+    {
+        "name": "Evaluation: The International Journal of Theory, Research and Practice",
+        "issn": "1356-3890",
+        "domain": "MgPub",
+        "category": 3
+    },
+    {
+        "name": "Governance",
+        "issn": "0952-1895",
+        "domain": "MgPub",
+        "category": 3
+    },
+    {
+        "name": "International Journal of Public Administration",
+        "issn": "0190-0692",
+        "domain": "MgPub",
+        "category": 3
+    },
+    {
+        "name": "International Journal of Public Sector Management",
+        "issn": "0951-3558",
+        "domain": "MgPub",
+        "category": 3
+    },
+    {
+        "name": "International Review of Administrative Sciences",
+        "issn": "0020-8523",
+        "domain": "MgPub",
+        "category": 3
+    },
+    {
+        "name": "Local Government Studies",
+        "issn": "0300-3930",
+        "domain": "MgPub",
+        "category": 3
+    },
+    {
+        "name": "Public Administration: An International Quarterly",
+        "issn": "0033-3298",
+        "domain": "MgPub",
+        "category": 3
+    },
+    {
+        "name": "Public Administration and Development",
+        "issn": "0271-2075",
+        "domain": "MgPub",
+        "category": 3
+    },
+    {
+        "name": "Public Money and Management",
+        "issn": "0954-0962",
+        "domain": "MgPub",
+        "category": 3
+    },
+    {
+        "name": "Public Organization Review",
+        "issn": "1566-7170",
+        "domain": "MgPub",
+        "category": 3
+    },
+    {
+        "name": "Politiques et Management Public",
+        "issn": "0758-1726",
+        "domain": "MgPub",
+        "category": 4
+    },
+    {
+        "name": "International Review of Public Administration",
+        "issn": "1229-4659",
+        "domain": "MgPub",
+        "category": 4
+    },
+    {
+        "name": "Revue Française d’Administration Publique",
+        "issn": "0152-7401",
+        "domain": "MgPub",
+        "category": 4
+    },
+    // ************ SI ***************
+    {
+        "name": "MIS Quarterly",
+        "issn": "0276-7783",
+        "domain": "SI",
+        "category": 1
+    },
+    {
+        "name": "European Journal of Information Systems",
+        "issn": "0960-085X",
+        "domain": "SI",
+        "category": 1
+    },
+    {
+        "name": "Information Systems Research",
+        "issn": "1047-7047",
+        "domain": "SI",
+        "category": 1
+    },
+    {
+        "name": "Journal of MIS",
+        "issn": "0742-1222",
+        "domain": "SI",
+        "category": 1
+    },
+    {
+        "name": "Decision Support Systems",
+        "issn": "0167-9236",
+        "domain": "SI",
+        "category": 2
+    },
+    {
+        "name": "IEEE Transactions on Systems, Man, and Cybernetics: Systems",
+        "issn": "1083-4427",
+        "domain": "SI",
+        "category": 2
+    },
+    {
+        "name": "Information and Management",
+        "issn": "0378-7206",
+        "domain": "SI",
+        "category": 2
+    },
+    {
+        "name": "Information and Organization",
+        "issn": "1471-7727",
+        "domain": "SI",
+        "category": 2
+    },
+    {
+        "name": "Information Systems Journal",
+        "issn": "1350-1917",
+        "domain": "SI",
+        "category": 2
+    },
+    {
+        "name": "International Journal of Electronic Commerce",
+        "issn": "1086-4415",
+        "domain": "SI",
+        "category": 2
+    },
+    {
+        "name": "Journal of the Association for Information Systems",
+        "issn": "1536-9323",
+        "domain": "SI",
+        "category": 2
+    },
+    {
+        "name": "Journal of Information Technology",
+        "issn": "0268-3962",
+        "domain": "SI",
+        "category": 2
+    },
+    {
+        "name": "Journal of Strategic Information Systems",
+        "issn": "0963-8687",
+        "domain": "SI",
+        "category": 2
+    },
+    {
+        "name": "Systèmes d’Information et Management",
+        "issn": "1260-4984",
+        "domain": "SI",
+        "category": 2
+    },
+    {
+        "name": "Business Process Management Journal",
+        "issn": "1463-7154",
+        "domain": "SI",
+        "category": 3
+    },
+    {
+        "name": "Data Base for Advances in Information Systems",
+        "issn": "1532-0936",
+        "domain": "SI",
+        "category": 3
+    },
+    {
+        "name": "Electronic Markets",
+        "issn": "1019-6781",
+        "domain": "SI",
+        "category": 3
+    },
+    {
+        "name": "Expert Systems with Applications",
+        "issn": "0957-4174",
+        "domain": "SI",
+        "category": 3
+    },
+    {
+        "name": "Information Technology and People",
+        "issn": "0959-3845",
+        "domain": "SI",
+        "category": 3
+    },
+    {
+        "name": "International Journal of Human Computer Studies",
+        "issn": "1071-5819",
+        "domain": "SI",
+        "category": 3
+    },
+    {
+        "name": "International Journal of Information Management",
+        "issn": "0268-4012",
+        "domain": "SI",
+        "category": 3
+    },
+    {
+        "name": "Journal of Global Information Management",
+        "issn": "1062-7375",
+        "domain": "SI",
+        "category": 3
+    },
+    {
+        "name": "Journal of Organizational and End User Computing",
+        "issn": "1546-2234",
+        "domain": "SI",
+        "category": 3
+    },
+    {
+        "name": "Knowledge Management Research & Practice",
+        "issn": "1477-8238",
+        "domain": "SI",
+        "category": 3
+    },
+    {
+        "name": "ACM Transactions on Computer-Human Interaction",
+        "issn": "1073-0516",
+        "domain": "SI",
+        "category": 4
+    },
+    {
+        "name": "Business and Information Systems Engineering",
+        "issn": "1867-0202",
+        "domain": "SI",
+        "category": 4
+    },
+    {
+        "name": "Communications of the Association for Information Systems",
+        "issn": "1529-3181",
+        "domain": "SI",
+        "category": 4
+    },
+    {
+        "name": "Electronic Journal of Information Systems Evaluation",
+        "issn": "1566-6379",
+        "domain": "SI",
+        "category": 4
+    },
+    {
+        "name": "International Journal of Technology and Human Interaction",
+        "issn": "1548-3908",
+        "domain": "SI",
+        "category": 4
+    },
+    {
+        "name": "Journal of Decision Systems",
+        "issn": "1246-0125",
+        "domain": "SI",
+        "category": 4
+    },
+    {
+        "name": "Journal of Enterprise Information Management",
+        "issn": "1741-0398",
+        "domain": "SI",
+        "category": 4
+    },
+    {
+        "name": "Réseaux",
+        "issn": "0751-7971",
+        "domain": "SI",
+        "category": 4
+    },
+    // ************ StratOrg ***************
+    {
+        "name": "Administrative Science Quarterly",
+        "issn": "0001-8392",
+        "domain": "StratOrg",
+        "category": 1
+    },
+    {
+        "name": "Strategic Management Journal",
+        "issn": "0143-2095",
+        "domain": "StratOrg",
+        "category": 1
+    },
+    {
+        "name": "Journal of International Business Studies",
+        "issn": "0047-2506",
+        "domain": "StratOrg",
+        "category": 1
+    },
+    {
+        "name": "Journal of World Business",
+        "issn": "1090-9516",
+        "domain": "StratOrg",
+        "category": 1
+    },
+    {
+        "name": "Organization",
+        "issn": "1350-5084",
+        "domain": "StratOrg",
+        "category": 1
+    },
+    {
+        "name": "Organization Science",
+        "issn": "1047-7039",
+        "domain": "StratOrg",
+        "category": 1
+    },
+    {
+        "name": "Organization Studies",
+        "issn": "0170-8406",
+        "domain": "StratOrg",
+        "category": 1
+    },
+    {
+        "name": "Business and Society",
+        "issn": "0007-6503",
+        "domain": "StratOrg",
+        "category": 2
+    },
+    {
+        "name": "International Business Review",
+        "issn": "0969-5931",
+        "domain": "StratOrg",
+        "category": 2
+    },
+    {
+        "name": "Long Range Planning",
+        "issn": "0024-6301",
+        "domain": "StratOrg",
+        "category": 2
+    },
+    {
+        "name": "Organization and Environment",
+        "issn": "1086-0266",
+        "domain": "StratOrg",
+        "category": 2
+    },
+    {
+        "name": "Organizational Dynamics",
+        "issn": "0090-2616",
+        "domain": "StratOrg",
+        "category": 2
+    },
+    {
+        "name": "Organizational Research Methods",
+        "issn": "1094-4281",
+        "domain": "StratOrg",
+        "category": 2
+    },
+    {
+        "name": "Research in Organizational Behavior",
+        "issn": "0191-3085",
+        "domain": "StratOrg",
+        "category": 2
+    },
+    {
+        "name": "Strategic Organization",
+        "issn": "1476-1270",
+        "domain": "StratOrg",
+        "category": 2
+    },
+    {
+        "name": "Advances in Strategic Management",
+        "issn": "0742-3322",
+        "domain": "StratOrg",
+        "category": 3
+    },
+    {
+        "name": "Cross Cultural & Strategic Management",
+        "issn": "2059-5794",
+        "domain": "StratOrg",
+        "category": 3
+    },
+    {
+        "name": "Group Dynamics: Theory, Research and Practice",
+        "issn": "1089-2699",
+        "domain": "StratOrg",
+        "category": 3
+    },
+    {
+        "name": "Group Processes and Intergroup Relations",
+        "issn": "1368-4302",
+        "domain": "StratOrg",
+        "category": 3
+    },
+    {
+        "name": "Journal of Applied Behavioral Science",
+        "issn": "0021-8863",
+        "domain": "StratOrg",
+        "category": 3
+    },
+    {
+        "name": "Journal of International Management",
+        "issn": "1075-4253",
+        "domain": "StratOrg",
+        "category": 3
+    },
+    {
+        "name": "Journal of Knowledge Management",
+        "issn": "1367-3270",
+        "domain": "StratOrg",
+        "category": 3
+    },
+    {
+        "name": "Journal of Organizational Behavior Management",
+        "issn": "0160-8061",
+        "domain": "StratOrg",
+        "category": 3
+    },
+    {
+        "name": "Journal of Organizational Change Management",
+        "issn": "0953-4814",
+        "domain": "StratOrg",
+        "category": 3
+    },
+    {
+        "name": "Management and Organization Review",
+        "issn": "1740-8776",
+        "domain": "StratOrg",
+        "category": 3
+    },
+    {
+        "name": "Management International",
+        "issn": "1206-1697",
+        "domain": "StratOrg",
+        "category": 3
+    },
+    {
+        "name": "Management International Review",
+        "issn": "0938-8249",
+        "domain": "StratOrg",
+        "category": 3
+    },
+    {
+        "name": "Multinational Business Review",
+        "issn": "1525-383X",
+        "domain": "StratOrg",
+        "category": 3
+    },
+    {
+        "name": "Research in the Sociology of Organizations",
+        "issn": "0733-558X",
+        "domain": "StratOrg",
+        "category": 3
+    },
+    {
+        "name": "Strategy Science",
+        "issn": "2333-2050",
+        "domain": "StratOrg",
+        "category": 3
+    },
+    {
+        "name": "Technology Analysis and Strategic Management",
+        "issn": "0953-7325",
+        "domain": "StratOrg",
+        "category": 3
+    },
+    {
+        "name": "Asia Pacific Business Review",
+        "issn": "1360-2381",
+        "domain": "StratOrg",
+        "category": 4
+    },
+    {
+        "name": "Communications & Strategies",
+        "issn": "1157-8637",
+        "domain": "StratOrg",
+        "category": 4
+    },
+    {
+        "name": "Critical Perspectives on International Business",
+        "issn": "1742-2043",
+        "domain": "StratOrg",
+        "category": 4
+    },
+    {
+        "name": "Culture and Organization",
+        "issn": "1475-9551",
+        "domain": "StratOrg",
+        "category": 4
+    },
+    {
+        "name": "Entreprise et Société",
+        "issn": "2553-7830",
+        "domain": "StratOrg",
+        "category": 4
+    },
+    {
+        "name": "European Journal of International Management",
+        "issn": "1751-6757",
+        "domain": "StratOrg",
+        "category": 4
+    },
+    {
+        "name": "Gérer et Comprendre",
+        "issn": "0295-4397",
+        "domain": "StratOrg",
+        "category": 4
+    },
+    {
+        "name": "International Journal of Cross Cultural Management",
+        "issn": "1470-5958",
+        "domain": "StratOrg",
+        "category": 4
+    },
+    {
+        "name": "Journal of Business Strategy",
+        "issn": "0275-6668",
+        "domain": "StratOrg",
+        "category": 4
+    },
+    {
+        "name": "Journal of Change Management",
+        "issn": "1469-7017",
+        "domain": "StratOrg",
+        "category": 4
+    },
+    {
+        "name": "Journal of Management and Governance",
+        "issn": "1385-3457",
+        "domain": "StratOrg",
+        "category": 4
+    },
+    {
+        "name": "Leadership",
+        "issn": "1742-7150",
+        "domain": "StratOrg",
+        "category": 4
+    },
+    {
+        "name": "Learning Organization",
+        "issn": "0969-6474",
+        "domain": "StratOrg",
+        "category": 4
+    },
+    {
+        "name": "Management Communication Quarterly",
+        "issn": "0893-3189",
+        "domain": "StratOrg",
+        "category": 4
+    },
+    {
+        "name": "Revue Internationale de Psychosociologie et de Gestion des Comportements Organisationnels",
+        "issn": "2262-8401",
+        "domain": "StratOrg",
+        "category": 4
+    },
+    {
+        "name": "Strategic Change",
+        "issn": "1086-1718",
+        "domain": "StratOrg",
+        "category": 4
+    },
+    {
+        "name": "Thunderbird International Business Review",
+        "issn": "1096-4762",
+        "domain": "StratOrg",
+        "category": 4
     }
 ]
 

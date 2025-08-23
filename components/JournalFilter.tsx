@@ -93,7 +93,7 @@ const JournalFilter: React.FC<JournalFilterProps> = ({
           className="w-full  px-4 py-3 placeholder-gray-500 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-slate-300 focus:border-transparent"
           onChange={(e) => setFilterText(e.target.value)}
         />
-        <div className="flex gap-2 max-md:mx-auto">
+        <div className="flex flex-wrap gap-2 max-md:mx-auto">
           <CustomDropdown
             setFilter={setFilterDomain}
             filter={filterDomain}
