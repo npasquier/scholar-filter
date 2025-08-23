@@ -23,14 +23,14 @@ const CustomDropdown: React.FC<CustomDropdownProps> = ({
   };
 
   return (
-    <div className={`relative  ${items[0].name == "Domain" ? "w-32" : "w-24"}`}>
+    <div className={`relative  ${items[0].name == "Domain" ? "w-80" : "w-24"}`}>
       <button
         onClick={toggleDropdown}
         className="text-left w-full px-3 py-2 bg-[#afaeae08] text-[#191919] border border-gray-300 rounded-md shadow-sm"
       >
         <span>
           {filter
-            ? items.find((item: any) => item.value === filter)?.name
+            ? (items.find((item: any) => item.value === filter)?.translation) || items.find((item: any) => item.value === filter)?.name
             : items[0].name}
         </span>
         {!filter && <span className="text-zinc-400"> &#9660;</span>}{" "}
@@ -43,7 +43,7 @@ const CustomDropdown: React.FC<CustomDropdownProps> = ({
               onClick={() => selectOption(item.value)}
               className="px-3 py-2 hover:bg-gray-100 cursor-pointer"
             >
-              {item.name}
+              {item.translation ? item.translation : item.name}
             </div>
           ))}
         </div>

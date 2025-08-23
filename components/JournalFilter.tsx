@@ -44,10 +44,10 @@ const JournalFilter: React.FC<JournalFilterProps> = ({
 
   const ranks = [
     { name: "Rank", value: "" },
-    { name: "Rank: 1", value: "1" },
-    { name: "Rank: 2", value: "2" },
-    { name: "Rank: 3", value: "3" },
-    { name: "Rank: 4", value: "4" },
+    { name: "Rank #1", value: "1" },
+    { name: "Rank #2", value: "2" },
+    { name: "Rank #3", value: "3" },
+    { name: "Rank #4", value: "4" },
   ];
 
   const categoryHTML = domains
@@ -68,17 +68,21 @@ const JournalFilter: React.FC<JournalFilterProps> = ({
 
   return (
     <div className="relative top-0 p-4 md:p-6 bg-white rounded-lg shadow-md">
-      <div className="flex items-center justify-center pb-6 gap-2">
+      <div className="flex flex-col items-center justify-center pb-6">
         <h3 className="font-semibold text-2xl text-center my-auto">
-          Available Journals
+          Journals in Economics
         </h3>
-        <div className="group my-auto">
+        <br/>
+        <h6 className="text-center text-sm italic">
+          Based on the last categorization by the CNRS in June 2020 available <a target="_blank" rel="noopener noreferrer" href="https://www.gate.cnrs.fr/wp-content/uploads/2021/12/categorisation37_liste_juin_2020-2.pdf" className="font-semibold">here</a>
+        </h6>
+        {/* <div className="group my-auto">
           <Image src="/info.svg" alt="info" width={20} height={20} />
           <span className="absolute bottom-full max-md:left-6 z-10 -mb-6 hidden group-hover:inline-block w-80 text-center text-sm bg-black text-white p-2 rounded-xl shadow-lg">
             Based on the categorization of journals in economics and management
             by the CNRS in June 2020 available <a target="_blank" rel="noopener noreferrer" href="https://www.gate.cnrs.fr/wp-content/uploads/2021/12/categorisation37_liste_juin_2020-2.pdf">here</a>
           </span>
-        </div>
+        </div> */}
       </div>
 
       <div className="flex flex-col flex-wrap md:flex-row md:items-center gap-3 mb-6">

@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useRef, useState } from 'react';
+import { useRef, useState } from 'react';
 import JournalDisplay from './JournalDisplay';
 import JournalFilter from './JournalFilter';
 import { toast, ToastContainer } from 'react-toastify';
@@ -82,12 +82,61 @@ const JournalManager: React.FC<JournalManagerProps> = ({ journals }) => {
       )
       .join('+OR');
 
+    const forbiddenWords = [
+      'russian',
+      'brics',
+      'chinese',
+      'baltic',
+      'RUDN',
+      'Quarterly',
+      'Portuguese',
+      'Spanish',
+      'French',
+      'West',
+      'Sociology',
+      'Montenegrin',
+      'Hitotsubashi',
+      'Business',
+      'Finance',
+      'Canadian',
+      'Scandinavian',
+      'Cambridge',
+      'UTMS',
+      'International',
+      'Management',
+      'Indian',
+      'rand',
+      'Duke',
+      'Seoul',
+      'ASIAN',
+      'Social',
+      'Studies',
+      'Bibliography',
+      'American',
+      'New',
+      'Econometrics',
+      'African',
+      'sustainable',
+      'Romanian',
+      'Development'
+    ];
+
+    const exclusions = forbiddenWords
+      .filter(
+        (word) =>
+          !selectedJournals.some((journal: any) =>
+            journal.name.toLowerCase().includes(word)
+          )
+      )
+      .map((word) => `+-source%3A"${encodeURIComponent(word)}"`)
+      .join('');
+
     const queryAuthor =
       authorQuery && `+author%3A"${encodeURIComponent(authorQuery)}"`;
     const queryStartYear = startYear && `&as_ylo=${startYear}`;
     const queryEndYear = endYear && `&as_yhi=${endYear}`;
 
-    const finalUrl = `${baseUrl}${queryParam}${sourceParam}${queryAuthor}${queryStartYear}${queryEndYear}`;
+    const finalUrl = `${baseUrl}${queryParam}${sourceParam}${exclusions}${queryAuthor}${queryStartYear}${queryEndYear}`;
     window.open(finalUrl, '_blank');
   };
 
@@ -100,7 +149,7 @@ const JournalManager: React.FC<JournalManagerProps> = ({ journals }) => {
           value={query}
           onChange={handleQueryChange}
           placeholder='Enter search query'
-          className='w-full md:w-96 mr-6 px-3 py-2 placeholder-gray-500 border border-gray-300 rounded-md shadow-sm outline-none focus:outline-none focus:ring-2 focus:ring-slate-300 focus:border-transparent' // Responsive width
+          className='w-full md:w-96 mr-6 px-3 py-2 placeholder-gray-500 border border-gray-300 rounded-md shadow-sm outline-none focus:outline-none focus:ring-2 focus:ring-slate-300 focus:border-transparent'
         />
 
         <button
