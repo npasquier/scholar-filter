@@ -125,11 +125,13 @@ const JournalManager: React.FC<JournalManagerProps> = ({ journals }) => {
       .filter(
         (word) =>
           !selectedJournals.some((journal: any) =>
-            journal.name.toLowerCase().includes(word)
+            journal.name.toLowerCase().includes(word.toLowerCase())
           )
       )
       .map((word) => `+-source%3A"${encodeURIComponent(word)}"`)
       .join('');
+
+    console.log(selectedJournals ? selectedJournals : 'No journal selected yet')
 
     const queryAuthor =
       authorQuery && `+author%3A"${encodeURIComponent(authorQuery)}"`;
